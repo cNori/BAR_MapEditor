@@ -1,0 +1,7339 @@
+{
+	"ID": "a3604b4a4c4dce30867b188380a91299",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6605,
+	"Data": [
+		{
+			"ID": "a3604b4a4c4dce30867b188380a91299",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 10
+			}
+		},
+		{
+			"ID": "bb79c6c144c3e695dd459f9bcef80127",
+			"TypeName": "Game.UIRoot",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"V": {}
+		},
+		{
+			"ID": "e55243114c8cec58edee6986322c7359",
+			"TypeName": "Game.GiveMeMyAssetsBack",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"V": {
+	"Assets": [
+		"e5e243314ff562cdb089b5abb0133cb5",
+		"81d56cf5412849958d6a8183b67dab4a",
+		"aacd5f4d441e83d91a97c097ecb849f8",
+		"74d9da8846b4b93f3bc3878a3b117887",
+		"8c1e233b4d922c1fd73fa6b41519dc92",
+		"93a1cba842741364f13e468b55c360e3"
+	]
+}
+		},
+		{
+			"ID": "22f8cdc745d085c649c5b6a1ff7e1609",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": -75.76123046875,
+					"Y": 160.0,
+					"Z": -71.455078125
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "36012b0541ec7a6ec51c1c804c21bf33",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": -75.76123046875,
+					"Y": 150.0,
+					"Z": -71.455078125
+				}
+			},
+			"Sun": "22f8cdc745d085c649c5b6a1ff7e1609"
+		},
+		{
+			"ID": "662125cc4dcd104e0609bead16c6487a",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"Name": "SkyLight",
+			"Transform": {
+				"Translation": {
+					"X": -115.76123046875,
+					"Y": 0.0,
+					"Z": -71.455078125
+				}
+			},
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "f444886c460c9950be1e3c8c722c27e3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"Name": "SpringArm",
+			"Transform": {
+				"Translation": {
+					"X": 43.311676025390628,
+					"Y": 0.0,
+					"Z": 48.466243743896487
+				}
+			}
+		},
+		{
+			"ID": "5171de964b1f63d262f5e7ad8027cf2b",
+			"TypeName": "Game.CameraControler",
+			"ParentID": "f444886c460c9950be1e3c8c722c27e3",
+			"V": {
+	"MoveSpeed": 1.0,
+	"arm": "3361ca944859794f28489baf028fb3d9"
+}
+		},
+		{
+			"ID": "3361ca944859794f28489baf028fb3d9",
+			"TypeName": "Game.SpringArm",
+			"ParentID": "f444886c460c9950be1e3c8c722c27e3",
+			"V": {
+	"Distance": 170.0,
+	"CameraAngle": {
+		"X": 49.65876,
+		"Y": 35.68078
+	},
+	"DistanceStepSize": 15.0,
+	"AngleStepSize": 15.0,
+	"FallowStepSize": 15.0
+}
+		},
+		{
+			"ID": "7fe32fde4f8ac838aee4378e4e0e7780",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "f444886c460c9950be1e3c8c722c27e3",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": -64.18730163574219,
+					"Y": 129.57444763183595,
+					"Z": -89.38934326171875
+				},
+				"Orientation": {
+					"X": 0.3997252285480499,
+					"Y": 0.2780466079711914,
+					"Z": -0.12864862382411958,
+					"W": 0.8639209270477295
+				}
+			}
+		},
+		{
+			"ID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a3604b4a4c4dce30867b188380a91299",
+			"Name": "EmptyActor"
+		},
+		{
+			"ID": "6fdc79764eda37a3aa01b398a9baf2ab",
+			"TypeName": "Game.Terrain",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"V": {
+	"material": "46eeb793441983abe80bf582fcdd2cee",
+	"Scale": 8.0,
+	"BrushColor": {
+		"R": 0.0,
+		"G": 1.0,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"BrushSize": 1.0,
+	"BrushFalloff": 0.20535715,
+	"BrushMinDistance": 5.0,
+	"BrushPosition": {
+		"X": 5.5561533,
+		"Y": 152.89964
+	},
+	"Size": {
+		"X": 16,
+		"Y": 16
+	}
+}
+		},
+		{
+			"ID": "0e988127432bb50e890d8893cd0e6416",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0bf0e3e442911ed6ec55f3bf1d6071fb",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0e988127432bb50e890d8893cd0e6416",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1859564e4069316fe4e08282eb6ec4b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0e988127432bb50e890d8893cd0e6416",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8ffe015747e52e80a2ebf39a0feb2bd8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5864b4964a43bd86d3cb4884f75ea21c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8ffe015747e52e80a2ebf39a0feb2bd8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "803822264287359cdded209a09521a79",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8ffe015747e52e80a2ebf39a0feb2bd8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6e32412a4b6497eecf24b5b82dbc6c72",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d14de0e948d24601a1f805a2ef4e4be3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6e32412a4b6497eecf24b5b82dbc6c72",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2156e31841fb84ff650ef6b3639de5a0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6e32412a4b6497eecf24b5b82dbc6c72",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5c0617454174e74298adada9981b10b5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0a5a92fe460061f812cb278880ff7f7a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5c0617454174e74298adada9981b10b5",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9fe368ad440cce1fda752e986d33b72e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5c0617454174e74298adada9981b10b5",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9c946dda492f50af8bdd2eb6d3573880",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9ed15dc14dfd3983b78dc991f18ff800",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9c946dda492f50af8bdd2eb6d3573880",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8e45a6e74698dcd8cd9c9f9722214208",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9c946dda492f50af8bdd2eb6d3573880",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d066a9434175b7a72af4b3b44b8aad49",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e6cea44b40f67e1a9d8f48b93d75dae1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d066a9434175b7a72af4b3b44b8aad49",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7c3f2b754271ae0d8eed80a8df556311",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d066a9434175b7a72af4b3b44b8aad49",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "05439cd64ee5fe1eddd6e495694fc3eb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e0c8ae384aa776d2ba94d7a9d246eadf",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "05439cd64ee5fe1eddd6e495694fc3eb",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "626c870649f7c9b7741b8d91b0eb211f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "05439cd64ee5fe1eddd6e495694fc3eb",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "dfbd0cc14a5aac040873edb6520b4199",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "72e74bd144e4cc254e106789eb8fa1b2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "dfbd0cc14a5aac040873edb6520b4199",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "12841f9a4afbd5f4d4484487b9ece0c9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dfbd0cc14a5aac040873edb6520b4199",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "33a3d5ec4d5ca405ceee28bebb2fcdec",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b8cc50554ff216d0e0e9058343bf2c13",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "33a3d5ec4d5ca405ceee28bebb2fcdec",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1f31e48d4a0b686a37134183ab610069",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "33a3d5ec4d5ca405ceee28bebb2fcdec",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "504457324a56f3dccedbf682e463f4fc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "803eefb2412f3fa31f08fb8175cec5dc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "504457324a56f3dccedbf682e463f4fc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4d00278b48b5bbba219a969356c08143",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "504457324a56f3dccedbf682e463f4fc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d30ffc8642b1d69a7fd17490e5f1c05a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "354895174c0e33ca9c839c944108b595",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d30ffc8642b1d69a7fd17490e5f1c05a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "eb6c5d2045f5c6c801696c9a9337e66a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d30ffc8642b1d69a7fd17490e5f1c05a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4f570d88442719c1d5a76885222061bc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7aa804b9468f352802a300bc1719df50",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4f570d88442719c1d5a76885222061bc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6e5ac3e94e5217fb478c98b3c692ebb5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4f570d88442719c1d5a76885222061bc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6f6de39e419d3f78737fb4a933c0ef53",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "03d769004ddff139249a2bb91d6d6cae",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6f6de39e419d3f78737fb4a933c0ef53",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "c29fa8864cc5b108fdb0f4bf134a81db",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6f6de39e419d3f78737fb4a933c0ef53",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a70b3b494033c93794cdf88c9c10dc92",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5626209c40a5a48d464e4f8457808e53",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a70b3b494033c93794cdf88c9c10dc92",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "df761e42414049482c1e528915ecf133",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a70b3b494033c93794cdf88c9c10dc92",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8adb23c2457dc3719b58bd8bcab138d3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "787dbccd4966d7aebb80a9bde6d98928",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8adb23c2457dc3719b58bd8bcab138d3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a42f417448bfd1db028252a2791fca59",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8adb23c2457dc3719b58bd8bcab138d3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b89876784f07a00b543f70a6de570013",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6bfa5c4c4dd3ec97ebc22b9b3c7b05a3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b89876784f07a00b543f70a6de570013",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1f4cb482488b48591a17448a68ab704e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b89876784f07a00b543f70a6de570013",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8281431441f00994365004b819bcf060",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "36d34c574ca726b5e6af15a8776bd68c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8281431441f00994365004b819bcf060",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "82ad461a49aeb3ca5f2adeb6c590ef8b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8281431441f00994365004b819bcf060",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2be240904e09c8f7fa042aa78b7478f2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7e49ff30462aecbfc4fee493421d05b9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2be240904e09c8f7fa042aa78b7478f2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "04a00e1543fef49d36aeaba9c8e18797",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2be240904e09c8f7fa042aa78b7478f2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "63c3c1224d8500ebde10c5b0957ddd4c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "233e539b4281b66101da84b0955ae364",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "63c3c1224d8500ebde10c5b0957ddd4c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "26b12e66403302d239717e8f2968b78d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "63c3c1224d8500ebde10c5b0957ddd4c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bf8ef12e40e10f3ea23ba3b4cd23fbc2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "33df09cf4553a4a8775a518768449f2e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bf8ef12e40e10f3ea23ba3b4cd23fbc2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "54c219344f1d25362e9c66a69eb0c4b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bf8ef12e40e10f3ea23ba3b4cd23fbc2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f239043e489fc2a2eca03da0fc184a93",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8c70f6e640e039c9bf282a96dcea22b8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f239043e489fc2a2eca03da0fc184a93",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d7ef357f4d944af388422580166812f6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f239043e489fc2a2eca03da0fc184a93",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bd5d7b9c4d4505bfd106dc8bc15760b6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "80f48148497d295b3e236c94ef017a07",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bd5d7b9c4d4505bfd106dc8bc15760b6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "46486d11410b8cd0d1e956b63f47d089",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bd5d7b9c4d4505bfd106dc8bc15760b6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "13c62e9f46f24b53c8d93285ce5017e9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7f915617482df8ebb0a9a39e22ea5fc8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "13c62e9f46f24b53c8d93285ce5017e9",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3bdc2ad54e5d70e2f69c889b8ab686fe",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "13c62e9f46f24b53c8d93285ce5017e9",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "1c3b00134fdf46eaeab750a61ef0fd11",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f444bc9444770019133b73bee50bf8fe",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1c3b00134fdf46eaeab750a61ef0fd11",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5ad453524e0d9cdfed64d7af9d116dfa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1c3b00134fdf46eaeab750a61ef0fd11",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9b11227d484f8788560e32903fb70457",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "893111b742d107f1f72bb8bf5553d52f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9b11227d484f8788560e32903fb70457",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "95af6b9841bf73e755e624bdcfe40df2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9b11227d484f8788560e32903fb70457",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2a6ab876422732aca613d081db7a11d2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6e3d95d34371bde4ac69a38fc54c3a65",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2a6ab876422732aca613d081db7a11d2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "702aec05450d0d61ec61ae95ca639fcb",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2a6ab876422732aca613d081db7a11d2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8bd823594150fff3db4e8ea5b09cbfc8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "aa84f01b47b9a14bdb11b1bfe237b21c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8bd823594150fff3db4e8ea5b09cbfc8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "83850ee442d004b448bf5a88e58039a6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8bd823594150fff3db4e8ea5b09cbfc8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5cd7256e438696e7dabd38b898bb0e2c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d84ab0604d54a7b940ab7aa7df5e6296",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5cd7256e438696e7dabd38b898bb0e2c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6956ff9d4d46202b402f4cbe189913d1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5cd7256e438696e7dabd38b898bb0e2c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d897cdf04d41ec27c2582fb6143c5a34",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3ceb55ec42ab7dcfba43b99fc359fc69",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d897cdf04d41ec27c2582fb6143c5a34",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f38cc2f44f9a07b7b6ef0b932b592f66",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d897cdf04d41ec27c2582fb6143c5a34",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "64425c2d4b129d3932162a98fc90d637",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f6cb296447add666e20ed4b44ec11c10",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "64425c2d4b129d3932162a98fc90d637",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fcb0fda446de81570c8c8e8e488a49ba",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "64425c2d4b129d3932162a98fc90d637",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8c363cde4d1674ffd8fc3a8c244ce87a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9fb97bd847f8e855415dfa8aa9b6325e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8c363cde4d1674ffd8fc3a8c244ce87a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "123930e745c8b6f0bd58e4be56308472",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8c363cde4d1674ffd8fc3a8c244ce87a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f3c541a14f5152bfd658a0869ecbfe77",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 64.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b2cabe7e41d3ad89b95e20b43705017d",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f3c541a14f5152bfd658a0869ecbfe77",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "e0e10cf44bb0796e4e83eea1c3008c8f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f3c541a14f5152bfd658a0869ecbfe77",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "15b2fca8479165610fe050908b582db4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "126f20c448a9f6abcbdfc0990fe902e1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "15b2fca8479165610fe050908b582db4",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8fb66d504a2399d15c0d73944d258411",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "15b2fca8479165610fe050908b582db4",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f6dd2cfe4b8777e91f47b2854b8d94b3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b4f5ec624342f737736651a7dc8e4519",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f6dd2cfe4b8777e91f47b2854b8d94b3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "33fcf1964c5498b32c223fbfd92c12d8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f6dd2cfe4b8777e91f47b2854b8d94b3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c66fe88f4ac1b40835249e9812a56667",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "33b19de643be96164869f4ab87871dff",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c66fe88f4ac1b40835249e9812a56667",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "97a614ce4c19402052a14ab55620b380",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c66fe88f4ac1b40835249e9812a56667",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "86d9b89d498b7dd8369fe6811ea0a764",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d64d251b402c8af0ed7e608cf3853349",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "86d9b89d498b7dd8369fe6811ea0a764",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b692308042c45f894bea68a1a865a02a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "86d9b89d498b7dd8369fe6811ea0a764",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8624b54542219f73f5e19d9765b33aef",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "59b474d7448037cb3416848c3018d5e1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8624b54542219f73f5e19d9765b33aef",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "313a213648d60736fa402cb391a73f95",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8624b54542219f73f5e19d9765b33aef",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "77d76a4a45c6ed0977dbeb829a862c70",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8cfcb7dd488d4173502731bd489a7081",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "77d76a4a45c6ed0977dbeb829a862c70",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5b24e1984b958dbffb8222a84ed7de5d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "77d76a4a45c6ed0977dbeb829a862c70",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5767d0ac45f04d1d4aeddb9fcc241cfc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "fd93d4f4468a9f22aa5963b2a9975a5c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5767d0ac45f04d1d4aeddb9fcc241cfc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "02b1c7b84677ce541d2e5cbf18cf5fb5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5767d0ac45f04d1d4aeddb9fcc241cfc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "1959f2e146abf98ec1cb49953b5f580b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9c6422d54ae84c32d4897dac54bfab2a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1959f2e146abf98ec1cb49953b5f580b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6d85adb3404fd1331dbed79b5cb9b05d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1959f2e146abf98ec1cb49953b5f580b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9444e5534e680822cd98efaaec20ab6b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b328802d43a371c1c0145b90ef912298",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9444e5534e680822cd98efaaec20ab6b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f0fd0fbc4bd8544bd16724941e70aeb3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9444e5534e680822cd98efaaec20ab6b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "899e840b4cdc3c5a314f0c8b2392b062",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8e92e1be4fea7ece6afcd7b746a32757",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "899e840b4cdc3c5a314f0c8b2392b062",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "006754f44d4390a28f5bbc847b1306ae",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "899e840b4cdc3c5a314f0c8b2392b062",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ebe30186474476b024afe6b6fcfb1148",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d1fbbc8e4a6564dd6a9e62954377177e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ebe30186474476b024afe6b6fcfb1148",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "91bb278e4b7f55ec7341f99b22b3874b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ebe30186474476b024afe6b6fcfb1148",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2d0869994eb9888ec1e5488747c7cca6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1c9dcdf24e1d543a0df0329a56497419",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2d0869994eb9888ec1e5488747c7cca6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "594d73934049ac23132169b72dd3a3c8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2d0869994eb9888ec1e5488747c7cca6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f9d66fa349f380267e3006b08cd5a0a8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "35ed3a514d4dd8062a36fdb374840a8f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f9d66fa349f380267e3006b08cd5a0a8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "dd4fc51a4f092abd6107909826d1b7e9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f9d66fa349f380267e3006b08cd5a0a8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bac10bec42e2eab5b898dabb8c0857d0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "faed1c19408e7a83ea87e2b7a6245206",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bac10bec42e2eab5b898dabb8c0857d0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2b0bfbd34a7fc1bf6593da914db0ca68",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bac10bec42e2eab5b898dabb8c0857d0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e841eca44724bd6892f15993fe1cb201",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "eed06afc49d05368aa562abd14cafc2c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e841eca44724bd6892f15993fe1cb201",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3458574340f748dc9c3458b6be92ff6b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e841eca44724bd6892f15993fe1cb201",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9e46d5ce4c86e1300efc29b62355b02b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 128.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3d0312354ff406496b96da9b904a0eb5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9e46d5ce4c86e1300efc29b62355b02b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ca0e1dc54d9cb34cd38fbd9df6f37539",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9e46d5ce4c86e1300efc29b62355b02b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ffc378c74625f8b25bf9a68302187e77",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "985ef29a49ce66f169afd28ca2921de1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ffc378c74625f8b25bf9a68302187e77",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d2b8d94242ec8686ab683ba93b38d48d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ffc378c74625f8b25bf9a68302187e77",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a7b967ee412d18d09bf898aa86c5e584",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1e06cf47405be7f157d619bd360758f8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a7b967ee412d18d09bf898aa86c5e584",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "718eea97478b8ac95dd72ea13aeb6652",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a7b967ee412d18d09bf898aa86c5e584",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "147e39b740a7bc2e8b63a0afca0574f4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c92f5f1b4cfb11e80d152a9698eae498",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "147e39b740a7bc2e8b63a0afca0574f4",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "dfb58038471924ca178c0ebf4c6141dd",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "147e39b740a7bc2e8b63a0afca0574f4",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ff16604048dc7b8b00e13dae7bccb8ea",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "44bf23004b3f48f779d312a3cd7db1b8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ff16604048dc7b8b00e13dae7bccb8ea",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3fc3d72a4434f0925cc2bda455a9338f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ff16604048dc7b8b00e13dae7bccb8ea",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "91a7ecff4423f1c9fcab2dac6590d1f0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "975c206146df8575962eb995cb80f33e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "91a7ecff4423f1c9fcab2dac6590d1f0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "eeb9aedf4253b9749b60e3a8336c3da3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "91a7ecff4423f1c9fcab2dac6590d1f0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "707d730e49ddfb500c40468e720f45fc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5b6d781343d7e8abb47f73998fb2055b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "707d730e49ddfb500c40468e720f45fc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "915f02fd4d9000d35f556e992a68c2b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "707d730e49ddfb500c40468e720f45fc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "0c756b1c4214b0e57377469e57b858e3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c41311dc4e710fc1037f5fa9defea548",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0c756b1c4214b0e57377469e57b858e3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d3b36c2c435cb50f6fdfa7a8fbe59203",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0c756b1c4214b0e57377469e57b858e3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3765ac2d4e001f944e2448a4f56fc6d0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d333f7274c07541d691ff1a4d832f1a8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3765ac2d4e001f944e2448a4f56fc6d0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8359276d4d8c20ed2e2aca9a06ad76be",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3765ac2d4e001f944e2448a4f56fc6d0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b1dffd154e62ecb8028ddeb203668bcb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "365dfff348975e4cb1ed3eb4d9b83959",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b1dffd154e62ecb8028ddeb203668bcb",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fb0e89394ff60231fcaaf0bc37b37218",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b1dffd154e62ecb8028ddeb203668bcb",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "580a36f246f85593383a929fb7798c6d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0898a0ab4f4e094b78016287c86e156c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "580a36f246f85593383a929fb7798c6d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ad362f1945e2979b46d13b9815c675d8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "580a36f246f85593383a929fb7798c6d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8f7b23424ebd9ebfb35c2daf65dfd058",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4f0f38b847eb27d3555899871921abd3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8f7b23424ebd9ebfb35c2daf65dfd058",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a5be0cce445a18d6c19ccfba2f3ec75f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8f7b23424ebd9ebfb35c2daf65dfd058",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c60648194858653b6a8663af1645afd0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "197eb54143b21abbc5c8ecab7d760d41",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c60648194858653b6a8663af1645afd0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "df51748d4879025f1213ae86a3fa8f83",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c60648194858653b6a8663af1645afd0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b6d06a7a47fbe2a5fccaabad2def23c6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "52b9cb4b45b1f10d0f2c7dab57229df4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b6d06a7a47fbe2a5fccaabad2def23c6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ec8f50ae407a7334b59a8884ffdf6378",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b6d06a7a47fbe2a5fccaabad2def23c6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "0aabbd9d4f7e32dfd9442ea76bd40712",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "fdf9493840353128d98403b6ef6b499b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0aabbd9d4f7e32dfd9442ea76bd40712",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2520ad034c909691a7a45e99665c7aa6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0aabbd9d4f7e32dfd9442ea76bd40712",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a7492485429791d6e317908c635a1062",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f9a514c14351597500aea79713f9cedc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a7492485429791d6e317908c635a1062",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "491926a145dcbab6f3b99f8398f3d181",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a7492485429791d6e317908c635a1062",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7ef72c61417510608f390d9ff0f9cefd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 192.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8b3cb92849c2877a3e1ce8a545c91dc5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7ef72c61417510608f390d9ff0f9cefd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3bc73efb4116e96cbf3d0287729dd054",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7ef72c61417510608f390d9ff0f9cefd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c0dc79e3493b8f499582088c201517af",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d6750d6d42732af84b26adbdacb8c113",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c0dc79e3493b8f499582088c201517af",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7487a6bd414b36625ee2b6831c357c68",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c0dc79e3493b8f499582088c201517af",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d5f37a174f49a2ae14e48db8347edb0e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a440a94240e7db54bfae4bb9002fc0d4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d5f37a174f49a2ae14e48db8347edb0e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9e63cd184f52106eb483ee927acb9182",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d5f37a174f49a2ae14e48db8347edb0e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4c6b9c224938ee13aeeefca4004b4740",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "aa2da469446f41cc885b3eb4dde5d09f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4c6b9c224938ee13aeeefca4004b4740",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1b562a3545812b096a8a60b182a06363",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4c6b9c224938ee13aeeefca4004b4740",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b0b349254f90e429b2279788d62826f8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "14de9dba4e88e09e392650b16946be70",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b0b349254f90e429b2279788d62826f8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "03993db6446ef0ca794f90ade909401c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b0b349254f90e429b2279788d62826f8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d0dad7f243bada373c008c9cc11b8075",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "26c27e2542fa9ef36d4ae1822aae9f6a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d0dad7f243bada373c008c9cc11b8075",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "e6ccc1e04f8390e9b4a76d842f885ad0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d0dad7f243bada373c008c9cc11b8075",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "cf76695d4744821ab42554bdaf9a4280",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "ddc6fd3144db8fa3c8fcd68e80d97632",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cf76695d4744821ab42554bdaf9a4280",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "cf3312ba45f4b007bad364b2df2ce5b4",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "cf76695d4744821ab42554bdaf9a4280",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c56e0d8548424453ebc45a90fa8c807c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f2013019451e51cee92426b32392b8d5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c56e0d8548424453ebc45a90fa8c807c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "425dbd1046763a55277d499e70cfb288",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c56e0d8548424453ebc45a90fa8c807c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7a09012f4806d241aad350b327057377",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e7b4cc004266fb4da17b4eab7ffbf07e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7a09012f4806d241aad350b327057377",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b2b6cf2149050adaf04fadb6b92b44d2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7a09012f4806d241aad350b327057377",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a2b28e1a462cf72b5ffabc84c2c1a0d7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8f3432394564f7443e16c496504e90bc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a2b28e1a462cf72b5ffabc84c2c1a0d7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "023f33d14bc3deea214cfd8a816f3429",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a2b28e1a462cf72b5ffabc84c2c1a0d7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d6b6b6db416bd175e7eec5a3cbd5f560",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "141f83b54f8491b11ef2d6ab85b4d8dd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d6b6b6db416bd175e7eec5a3cbd5f560",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ba48a66b449430742003c3b7822387ad",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d6b6b6db416bd175e7eec5a3cbd5f560",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6b08ac9d4f199cdf1aa01abcab5b27f9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3b1613974f59f0f39a08cf8fa40d454f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6b08ac9d4f199cdf1aa01abcab5b27f9",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5fa6f978453e62cd4b382480e9a1cfea",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6b08ac9d4f199cdf1aa01abcab5b27f9",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "914a2fec4af410fe9ee5c7b2989d50ba",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "409d858c42b9acd16259b788ecbdde4b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "914a2fec4af410fe9ee5c7b2989d50ba",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1337f0e04ddfe97cf24c389527671db5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "914a2fec4af410fe9ee5c7b2989d50ba",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "baeb4fd243a75ca3c4e59185c834501d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "77ea9fc145a73352f42ea78c4f9ae5f5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "baeb4fd243a75ca3c4e59185c834501d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a4108d1c4155b359ea25c59a288aed16",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "baeb4fd243a75ca3c4e59185c834501d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "47847c994ad5c1e6723398ba8087e791",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f1d0fd5d45f88c924ca8b58a243d70f7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "47847c994ad5c1e6723398ba8087e791",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4316a7684880ed8601987e9ede0c69dd",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "47847c994ad5c1e6723398ba8087e791",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8efc6ab64a182d67692b2aae0287b653",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "542c31384ff348951843238377a348bb",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8efc6ab64a182d67692b2aae0287b653",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "397a9316495be70c128cb6899bba1b06",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8efc6ab64a182d67692b2aae0287b653",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e9468bc94d0e2ebe12551399886cbdba",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 256.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6db70bfb4c149ec12a4ebab9d5718ce6",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e9468bc94d0e2ebe12551399886cbdba",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0099daa2490e2f9e1f8a1fbaf70391fa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e9468bc94d0e2ebe12551399886cbdba",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "70a3e892409b7f31c02ac9a0157bb88c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e6ad2d674665d04b31ef9aa49d0d17df",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "70a3e892409b7f31c02ac9a0157bb88c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0cf07fce44677b6175c4f290670b628e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "70a3e892409b7f31c02ac9a0157bb88c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "810c28f44e756b80baceefb196a4d016",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d5795adb468d8bc8f73a7687c4aa2b02",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "810c28f44e756b80baceefb196a4d016",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "da58a9194d4931b8dcc148be2887ea61",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "810c28f44e756b80baceefb196a4d016",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5ab3515e42eb6c1fc761fcb42e767fdd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "acb50d0047d1bd3bc99d54b1bc70d0f8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5ab3515e42eb6c1fc761fcb42e767fdd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "dd0f0f0c436db5c9ec8f28bb9df60cb7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5ab3515e42eb6c1fc761fcb42e767fdd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7b36c3524b6227bc8e03c98339d3bfe6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "591579fb4fc42093a9bfa698731df796",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7b36c3524b6227bc8e03c98339d3bfe6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5b837d3a496ad8749f47d8a0450bc5fc",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7b36c3524b6227bc8e03c98339d3bfe6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "60f59391441726bdcc20d09aa4664c98",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6f142424450b09450b746ba5313040c7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "60f59391441726bdcc20d09aa4664c98",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6cf4aaf24e7bfaeba7557582e366ce68",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "60f59391441726bdcc20d09aa4664c98",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "fa2ed24c460095a375c71da1e699bee7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "850dabb842897ceb6a5a7ea3f2dae6c3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fa2ed24c460095a375c71da1e699bee7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5c507e8d4c1c5e441ae2fcbf067cf797",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fa2ed24c460095a375c71da1e699bee7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "658d2df6408fd8c2a0a492a51509864e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "fa798a7b47e2f4cb3baaa2983f81c586",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "658d2df6408fd8c2a0a492a51509864e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "72b5b674478fa70c75685b95fc79247b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "658d2df6408fd8c2a0a492a51509864e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d50a98454dfdc6ef1ffe3b8ba122c617",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "ca90d57d44f5d1c7097d32a841238126",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d50a98454dfdc6ef1ffe3b8ba122c617",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9c2089b640c34d11684e309b3fcc8bb0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d50a98454dfdc6ef1ffe3b8ba122c617",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6146cefc4a81d27b5aa1dea7bbe982d0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1ade1fbd49ffbade7ec69299f38704a7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6146cefc4a81d27b5aa1dea7bbe982d0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9b676cd84d0c9ab52ded3ea39a01c7b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6146cefc4a81d27b5aa1dea7bbe982d0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bef594ae42894ab40691b78c802138c5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "432af70245774513b374689a252f9903",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bef594ae42894ab40691b78c802138c5",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "32b9bb4e411e8159c45d41a340d23974",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bef594ae42894ab40691b78c802138c5",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "80cdf3244250fa9db4e1d08ccf0c6cbd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "bf7b316540c04aad357f0c86f0db9cf2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "80cdf3244250fa9db4e1d08ccf0c6cbd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "de572ef04a3710cc01269bb8f5cd930d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "80cdf3244250fa9db4e1d08ccf0c6cbd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "34e6164544bc7571e6063cb1e4bb506a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0c799e934f7375c65e744ab593ee79bb",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "34e6164544bc7571e6063cb1e4bb506a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4eb4139c425451dd8233bd9d157ab174",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "34e6164544bc7571e6063cb1e4bb506a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4f40ca1643f883737e2622bddf4637f0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f217ba194d9fbc8e2d186ba7b69f8056",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4f40ca1643f883737e2622bddf4637f0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8af594da43388e3a114c1884436882e3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4f40ca1643f883737e2622bddf4637f0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9176bbe94c7179bd5d6f1baac4a39294",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "529d14654152774bc61784b2bc72175d",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9176bbe94c7179bd5d6f1baac4a39294",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "01daf6384387283864e6da8e81f58d41",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9176bbe94c7179bd5d6f1baac4a39294",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "89718de84454b693d921a08446508da5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a21ab580424ffbaadfbd3bafc8892877",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "89718de84454b693d921a08446508da5",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "cca6e27a4d27babf27658ab9b64a98fa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "89718de84454b693d921a08446508da5",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "33088b654d87beb3fd9f2498f92c2746",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 320.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cfdeb7f74982900902186cb04b941f0c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "33088b654d87beb3fd9f2498f92c2746",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "bff50f824799244e0beb838ba3723155",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "33088b654d87beb3fd9f2498f92c2746",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7fd38b5845006e9adc8033bbe2b62132",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6ff88192445056768310e6919c57deea",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7fd38b5845006e9adc8033bbe2b62132",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "de865f5b4901cf7c0fb81797a15cc2c7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7fd38b5845006e9adc8033bbe2b62132",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ac459795415a5544c5baa5848bdcea11",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1c6f66ad4f4e2a17338600aad4a263ad",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ac459795415a5544c5baa5848bdcea11",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7848fbb74efe274d8ff52293afc8ede9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ac459795415a5544c5baa5848bdcea11",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "76bfc4954c70af1b0b3634a45b13db26",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8306dda04621459641b6c8a9a1547041",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "76bfc4954c70af1b0b3634a45b13db26",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "752534d24040f9c50a63f1b5d348c64d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "76bfc4954c70af1b0b3634a45b13db26",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b4aeb50140de6e3cd5c6f4bf3d894972",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c4c214d74fcfbf8e845fc98439c5c7ac",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b4aeb50140de6e3cd5c6f4bf3d894972",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fce46fba4be7c7db9fde558a38641b01",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b4aeb50140de6e3cd5c6f4bf3d894972",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "db98b555498a0b0a4be067b466ed4b09",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "40abf2aa489319754341cb9e7d20d727",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "db98b555498a0b0a4be067b466ed4b09",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "c7325e714b5ab2094215689cb2dda5ab",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "db98b555498a0b0a4be067b466ed4b09",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "af01c22e40f714aca85f43b15859ba07",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a52709ee4166defe20b1c8a464f8977c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "af01c22e40f714aca85f43b15859ba07",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3aec1a794f0271e868d84082ce7afb35",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "af01c22e40f714aca85f43b15859ba07",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d57a73db409d4adb321b53934a26800e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "bee72c7f432014e99c5d3aa45fe503ae",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d57a73db409d4adb321b53934a26800e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "518495d946143aa9ca05438f40b59901",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d57a73db409d4adb321b53934a26800e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "56d531b244cb874306931cbc7f419e29",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b0990bbe4d42dd5b93cebb8fa8f8305b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "56d531b244cb874306931cbc7f419e29",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "24cd6878460fca1211ec8aa146ff040f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "56d531b244cb874306931cbc7f419e29",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5a6f6acb40affa30feb0b0a45d0b36aa",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "72dd1aec4c4de8bd66ceb1b2051de63e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5a6f6acb40affa30feb0b0a45d0b36aa",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f544b0f740b43581e3cd008febfe5aee",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5a6f6acb40affa30feb0b0a45d0b36aa",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bca02e5c41c7578b42f37596a3aecbe9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6e80387042cf0adcf12a19990b32e524",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bca02e5c41c7578b42f37596a3aecbe9",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "15e94ac1497f08b49f201f904b38238f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bca02e5c41c7578b42f37596a3aecbe9",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d75deac74c50b35a051e4b945c3967c0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d5d8699d42c7a4f38f8a26a3e32975b1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d75deac74c50b35a051e4b945c3967c0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "43567cd647a9b142291d8188713ff3e2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d75deac74c50b35a051e4b945c3967c0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a01ced9549d59947d9241bb2b9d455db",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9fbbe912471e7bc1d7ec3e9a374bbe61",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a01ced9549d59947d9241bb2b9d455db",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "571468784e6d490e99826780051716ef",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a01ced9549d59947d9241bb2b9d455db",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bf9f2f31410a596b4591cbb239edd1d6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f61e458f48aec6d155b787ae44450f68",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bf9f2f31410a596b4591cbb239edd1d6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "69744a684b8d04d04be8828b7637f120",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bf9f2f31410a596b4591cbb239edd1d6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ee2237bf44a771d098a46a956cde7890",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "dc17c9024f85ad0096bf019c0e7a2690",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ee2237bf44a771d098a46a956cde7890",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f1ad9f4d454525c6a81bbb811e7cd4b0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ee2237bf44a771d098a46a956cde7890",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "17d765144716186e32d16ab1cc9e4721",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "2ef59ede4aaa1c48dab01ab099e1b2db",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "17d765144716186e32d16ab1cc9e4721",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "608afef0454d9c3d60f2529834c49169",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "17d765144716186e32d16ab1cc9e4721",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f906ed0d4e8e925b205890a7472e5b3f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 384.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a56f0ba54e16f457d105f295f2802694",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f906ed0d4e8e925b205890a7472e5b3f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "26c2a21b4db6ddb393e2839eb84dd6ad",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f906ed0d4e8e925b205890a7472e5b3f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e8ddf61a425931b53f4c9a95c2fee0af",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "380c5157406c88cee231b29caf418cdb",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e8ddf61a425931b53f4c9a95c2fee0af",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7d5411d145206fed4eb8b3a7c1d70510",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e8ddf61a425931b53f4c9a95c2fee0af",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f3a564b94f4ade7b537961a247f7cb94",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b64bab8c417a270603c9beb8045fd5ac",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f3a564b94f4ade7b537961a247f7cb94",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "139f0e2d4fbce13d8c114697d14101ae",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f3a564b94f4ade7b537961a247f7cb94",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "61f675cb4e4c8f7e630e45b6d2b1d3bf",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "97344d584ec8852587936bbc27081f24",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "61f675cb4e4c8f7e630e45b6d2b1d3bf",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "02651cd2486142c01466d49345dbaca7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "61f675cb4e4c8f7e630e45b6d2b1d3bf",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "cd80df8047ffea247745e7b6c82f2b90",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "db1eabf241a8787ebb93e992b076e592",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cd80df8047ffea247745e7b6c82f2b90",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6077eb4c483290963d7e3c98810b8848",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "cd80df8047ffea247745e7b6c82f2b90",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8610fa87484b9bb2c80271a953abe5cf",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a1a5831f44b7d2cd47e1e9bf35b6455c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8610fa87484b9bb2c80271a953abe5cf",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a937b4f74ac37333b1aa6cafcece3db5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8610fa87484b9bb2c80271a953abe5cf",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a6ff644e4c744a75a4a037bf16564b9d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cfecb78348a790e006f908b75aefa02b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a6ff644e4c744a75a4a037bf16564b9d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b477a8564a319b64808c8984c5f52530",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a6ff644e4c744a75a4a037bf16564b9d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "21f037a04eb92d42b36fef94edeab9d1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "73467c55476d1e3ab424de976302fbd1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "21f037a04eb92d42b36fef94edeab9d1",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7ac8e3ba492d44106c024dbe177cb9b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "21f037a04eb92d42b36fef94edeab9d1",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "019fe4a54d4b7cc4c85158a329103461",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "53fd5948439db31a1c721b8cdb20fa9b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "019fe4a54d4b7cc4c85158a329103461",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4856982242fdf2a14e173fa74d6d4195",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "019fe4a54d4b7cc4c85158a329103461",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e25a4cd44ccb5e709a2122809f02e6df",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "20ce71d04d55c9b17ea8c9a220201b82",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e25a4cd44ccb5e709a2122809f02e6df",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ba8050054efcb9c637ccbfb777491b43",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e25a4cd44ccb5e709a2122809f02e6df",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a1cd43514421fab98b732d83b1184ec4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1171ab704d6d6afa02fa27b1d1402b81",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a1cd43514421fab98b732d83b1184ec4",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3480ac5b4cdc32d6673d13ba823f2bd8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a1cd43514421fab98b732d83b1184ec4",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3cecfbf1487e5be70a1bce9242f73fd3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8c0d862946226cc75d869baa3c725df9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3cecfbf1487e5be70a1bce9242f73fd3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1c5be13a486f6a962d75439987f661b8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3cecfbf1487e5be70a1bce9242f73fd3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "cdfb4a1a4072d5ad40d711b886e9fcbc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "91530f18480c4eb39ced30a35e2dd641",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cdfb4a1a4072d5ad40d711b886e9fcbc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6dff17864e32ad0543b2ce8d37eb0391",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "cdfb4a1a4072d5ad40d711b886e9fcbc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "0bf9494a4ee0a4d0ad532fa84b3d9926",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cc5b3e134a4a6a2553c50ca013e3acc8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0bf9494a4ee0a4d0ad532fa84b3d9926",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "338430ea467ad965f37a04a952bb8ab1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0bf9494a4ee0a4d0ad532fa84b3d9926",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "76a0f8f64fa6d2c69ae8f18e7ea952ca",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8ee0ef7f48c4b2f460cd95af520dcfcc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "76a0f8f64fa6d2c69ae8f18e7ea952ca",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "14b9a0474a9163059e0f27aa938c2d6c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "76a0f8f64fa6d2c69ae8f18e7ea952ca",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "af3ac9ba4fb65bfcf77b2fa6b70aa000",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e6d5dcc84f37990cd686ff83ed6a92b2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "af3ac9ba4fb65bfcf77b2fa6b70aa000",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f419bda641b92e28b37f23ba542b3d1a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "af3ac9ba4fb65bfcf77b2fa6b70aa000",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "003c70fe4b1e9631cb3c2ebfe6772fc7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 448.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3304b288497ff99dd95ae7a0510f03f8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "003c70fe4b1e9631cb3c2ebfe6772fc7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "73a7d7e14d601076946e2f9e73b28a2d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "003c70fe4b1e9631cb3c2ebfe6772fc7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b1f48b5e4e95d59f1c87cab706deaad7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1638a72d4e7b580386fde5bd4d8ba036",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b1f48b5e4e95d59f1c87cab706deaad7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b7e04d6346da56975b3fcdb20749c6f9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b1f48b5e4e95d59f1c87cab706deaad7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2e63508943139a3fad4924b1bd57eef2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "af244bc347e9c6de79a86a8b9ad5e0e8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2e63508943139a3fad4924b1bd57eef2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b4bbcf7c4a9e5f5de43b6eb1cc55d94b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2e63508943139a3fad4924b1bd57eef2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5c4f551f4231dc4a6900d78aba1dee24",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9990c5844c1b220674f1b3a437ce1ec2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5c4f551f4231dc4a6900d78aba1dee24",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "46ab3778417e09f409ab0ba8348d4279",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5c4f551f4231dc4a6900d78aba1dee24",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c85baa534149568c1c13b6a858909205",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "dc66b0784b7841ca3452b1a09df5a4f3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c85baa534149568c1c13b6a858909205",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b3697f064bd432d8cf218e982d8aaa0d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c85baa534149568c1c13b6a858909205",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5a0506014b85dc35d2fa00a8bbad83a7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3cbadbda44bdfea6887eb9b4225588ce",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5a0506014b85dc35d2fa00a8bbad83a7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b9d74f0142219d2fe016bea4687c76a9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5a0506014b85dc35d2fa00a8bbad83a7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f52ae30f40edd64d6e08a3a6ed6fc107",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "af0f4c7a4eb974516717ca81dcfec226",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f52ae30f40edd64d6e08a3a6ed6fc107",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "88df37724700b6f5db262faf42e4034c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f52ae30f40edd64d6e08a3a6ed6fc107",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "fe57436c42d3293c9250d09ef44a8906",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "19e1026440c89ee3413343af36b1ca56",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fe57436c42d3293c9250d09ef44a8906",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d4589aad484ce9f5faabf2a6545c5f71",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fe57436c42d3293c9250d09ef44a8906",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "dbfd5910490a2b76dfa5d5a7b911f96d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "86ac406142b815b088f76eb6cc673c08",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "dbfd5910490a2b76dfa5d5a7b911f96d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0b1aeb91471241596e0fd0afb16af171",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dbfd5910490a2b76dfa5d5a7b911f96d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a9de3c444ccad5d04823dbb26b4e1425",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "bf0d09ec4d50c2eeb51d39ad25d3e4d5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a9de3c444ccad5d04823dbb26b4e1425",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "134fb6e74d396dcf7c4c99a1a1e44a0c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a9de3c444ccad5d04823dbb26b4e1425",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "1cd730fa4f63b16055bc35a53824ea36",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "aaa8f19d4538c98c39bfc4b9e56e0ca2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1cd730fa4f63b16055bc35a53824ea36",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3bd6de124bfdd834fd81d889d7d810f5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1cd730fa4f63b16055bc35a53824ea36",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8d95f6df4e4419413286a78ec976ab4c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "be1906564c4333d52a98dfb69757e369",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8d95f6df4e4419413286a78ec976ab4c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "394526254e27bcef9585b499994381b0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8d95f6df4e4419413286a78ec976ab4c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "50b6906449c7868f80c83a978a94a322",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d4ccc86c4e73c475c21963992cda34b0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "50b6906449c7868f80c83a978a94a322",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fb3f203e4b569955364341a4d2394871",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "50b6906449c7868f80c83a978a94a322",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "0969d0f34f3e9fe2259e219d176119d0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "ad104e2e4631bbb81517cf927fb76df2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0969d0f34f3e9fe2259e219d176119d0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2185085145ca544adc98c3a949536073",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0969d0f34f3e9fe2259e219d176119d0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d0f3fb2b4970a29152bd3fb7aadb0f32",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a57235e14dfaff185b6cbd8fec16bcff",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d0f3fb2b4970a29152bd3fb7aadb0f32",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "36ca1b0c4aa354e13726adbb77ea7077",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d0f3fb2b4970a29152bd3fb7aadb0f32",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "cdc5f19843f8e6daf59bed91271418e2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "242dbb714a38e2f9cc8f8b8a1db7de6e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cdc5f19843f8e6daf59bed91271418e2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0b8b52af4c31f13f37db49aa2f7265d5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "cdc5f19843f8e6daf59bed91271418e2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "159340c04273a47ab1f87d8af43bfa68",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 512.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e4fc45d147cd9f703eb59594dd119578",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "159340c04273a47ab1f87d8af43bfa68",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "681b568a419c3c066039c7a1d9af1227",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "159340c04273a47ab1f87d8af43bfa68",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d5793df0483f4f5edbbc50876b2111cb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c1f8fead47e412412c06e6879f8dc850",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d5793df0483f4f5edbbc50876b2111cb",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d50c40054769d910f14f1393796d6da1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d5793df0483f4f5edbbc50876b2111cb",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "880d0ae24fcdf4c05d43668bdbce4bbc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "151adbe149cb85f56cf4238a82d3e0c1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "880d0ae24fcdf4c05d43668bdbce4bbc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "cc7c26b848fe2d24559070973885acbd",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "880d0ae24fcdf4c05d43668bdbce4bbc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2ed553a945265177ab94ae8b02451c11",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8a9e473f484d658de1c6cb93d0dfd47e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2ed553a945265177ab94ae8b02451c11",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "681c6e32492e91ee62fb99b8d4703d59",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2ed553a945265177ab94ae8b02451c11",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "610cb85d4aa0f941478f2684c0cac2ae",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "646336784a32b9daec44eb8ae26d0e57",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "610cb85d4aa0f941478f2684c0cac2ae",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6e6306394a56427ab30b3bb1b46f4ae6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "610cb85d4aa0f941478f2684c0cac2ae",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3157fb734a190a16b95343a3d9f07dd6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b735f0f64f703cacf23b31a1fce6ab00",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3157fb734a190a16b95343a3d9f07dd6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6c66d2254c38638c450fffb98924a6f6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3157fb734a190a16b95343a3d9f07dd6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "04b758f2439ac6ccb2ad50a9e2ece5f8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c0fe6d8f4ae535d68f9521b1979b93ee",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "04b758f2439ac6ccb2ad50a9e2ece5f8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a5f0c1864af2f7740bd6fabcec888914",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "04b758f2439ac6ccb2ad50a9e2ece5f8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9d90c99a4a7452d06123949d5ddd8f9e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "603d24ba4be491319d5058bd4b48b151",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9d90c99a4a7452d06123949d5ddd8f9e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d6c7fee44e583647a1419abfff350ecf",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9d90c99a4a7452d06123949d5ddd8f9e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "923dcef94bb129d95cd56b9c82c84370",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cc13067a4faddd41a0a4efbe973ced04",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "923dcef94bb129d95cd56b9c82c84370",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4c21ecd0472e4e7eb734f588fd52a327",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "923dcef94bb129d95cd56b9c82c84370",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2306bb434a2a590ded70d9bde948fd75",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "fda97a0e499614ec9feeb79531b3ded9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2306bb434a2a590ded70d9bde948fd75",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "110655d44deb814e2ac1ca82ccc09103",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2306bb434a2a590ded70d9bde948fd75",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7f870b67414025a90a8db5b924ee6643",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b1e7e7184b615740f15ea9ab03dab437",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7f870b67414025a90a8db5b924ee6643",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "e52c6fc14aa4c2c731a7ca944ec4af70",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7f870b67414025a90a8db5b924ee6643",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3a6f482e4dc2e18c80f0f7afb26d1ccd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0d4e99b247abc18f62b5ea97b24671fc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3a6f482e4dc2e18c80f0f7afb26d1ccd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a53d7b8b457b607adde2759c91413fc0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3a6f482e4dc2e18c80f0f7afb26d1ccd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a0e464674d5c70282a59e2956606c53b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e454bc754bb6b036b4409da521b1105a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a0e464674d5c70282a59e2956606c53b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a58271ca41dde317964806a9523ebd4a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a0e464674d5c70282a59e2956606c53b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "070796d042f82941191455997754d43f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3b6c8cef4cdc6b2ba2c1bd87b2f2c3b0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "070796d042f82941191455997754d43f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "13da4190469ce1a2f7ac37a25150acc1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "070796d042f82941191455997754d43f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9e6df04e4c3a972de8fd13b7c9ad39fc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7d0d8434465b74c259cedab521512f53",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9e6df04e4c3a972de8fd13b7c9ad39fc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7e7ee43d4035d3a8cd2d5bb096c7bc2f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9e6df04e4c3a972de8fd13b7c9ad39fc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b3ab76ef4166f4f1565b11ac04441e63",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "eb0452724ca4c835cc36c4ac29db554d",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b3ab76ef4166f4f1565b11ac04441e63",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ec6d68c748781269378698aca59e2937",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b3ab76ef4166f4f1565b11ac04441e63",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "78ed893d4f6876f77c35509a4b656adb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 576.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f94a73f2452081a0870862813852c880",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "78ed893d4f6876f77c35509a4b656adb",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "122ff7ce452ed4a8e84bd7a7ab9f16c8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78ed893d4f6876f77c35509a4b656adb",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3c88308f4244b0ba6d80d0b216475e9f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "88adbf4347dd6b3336e199a31a50fbc1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3c88308f4244b0ba6d80d0b216475e9f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "cabfa9f444bf16b4a6658a8d32d028ae",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3c88308f4244b0ba6d80d0b216475e9f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c183830a4f65c3c244766692f91a377c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b85b026e46b5cc76dae425ae7269b6c7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c183830a4f65c3c244766692f91a377c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0a9dec45478a6e27e370caa87f40f125",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c183830a4f65c3c244766692f91a377c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "1eabf1fb4afc76bc8765c190003833e9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6d00227c4dc0f8ab2b626d814e28d972",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1eabf1fb4afc76bc8765c190003833e9",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a1a514e445ad655ae0015ca88d4fb158",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1eabf1fb4afc76bc8765c190003833e9",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6e0034524ff6664ff7d892a1eb351f9c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "34d7ae4343472e0135a63f83bce8a7bf",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6e0034524ff6664ff7d892a1eb351f9c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9f9407c549d5c98f78b2588309a319b6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6e0034524ff6664ff7d892a1eb351f9c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "cb9e6ea24594e540ad16cb8b1ee543e3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d9dc00f3415cf200d3a8878f10d570dd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cb9e6ea24594e540ad16cb8b1ee543e3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "72ded3a6444ec33445dbfdba4d44a5a7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "cb9e6ea24594e540ad16cb8b1ee543e3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b1d020e74a312a80b91905b2d8b3506d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "385127b5432f14fb09b004b13f9b5623",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b1d020e74a312a80b91905b2d8b3506d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7d6d6a1c4209131e16ad63a91b5b2828",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b1d020e74a312a80b91905b2d8b3506d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "64679f65411f60a6c719529c46c84450",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "923ae5a84516f970eeecae8ad0dfa7f8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "64679f65411f60a6c719529c46c84450",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "54569f2447ac8b0d945769939b84ee5d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "64679f65411f60a6c719529c46c84450",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "6bfa0ab84a05ad66fba5cfac9ea268fc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "80cc502147c574938013e7b25a5e6ea1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6bfa0ab84a05ad66fba5cfac9ea268fc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fc74a37a473f4bae3fac5da0c7973102",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6bfa0ab84a05ad66fba5cfac9ea268fc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c0bf94b94d98f72c79984fad5a786ec0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "2da548a3490ad19f08101da31e596278",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c0bf94b94d98f72c79984fad5a786ec0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "599cd01b4187ba4bfd060ab69d7b5615",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c0bf94b94d98f72c79984fad5a786ec0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "521b01294020210eb91d0ba3bcf7ddea",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9a21d81448b8768a94f589b2c918a8e0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "521b01294020210eb91d0ba3bcf7ddea",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "333de15f4e3c2011b6c8d48018228369",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "521b01294020210eb91d0ba3bcf7ddea",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "437a765447a9000f90acef9af101bd92",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c47c34df4a5d04155af8aab7fc0864d3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "437a765447a9000f90acef9af101bd92",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7806c3294106e8ac6b5198bd3d78525b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "437a765447a9000f90acef9af101bd92",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "26ebdb5a4678103c72ec9181957c9856",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "60988200482b092ce2aac78cfd28ac21",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "26ebdb5a4678103c72ec9181957c9856",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "488e797a418562ff8f39bc9edfa526cf",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "26ebdb5a4678103c72ec9181957c9856",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "195644964763bddd43c1c98b6488694a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "05e4644f44758d2880bd9992e4cb0df2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "195644964763bddd43c1c98b6488694a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "68829d1149a1e4a7347335a6cf8b7009",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "195644964763bddd43c1c98b6488694a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9993ff42493848b3b838668ff9884a2d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "58cffde149667644d36b24aa50241bde",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9993ff42493848b3b838668ff9884a2d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fa16968a450eb58d68e9438405717830",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9993ff42493848b3b838668ff9884a2d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b90c6a19488cbe2e55b35886c270ba09",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "ae50868e4cb0d20e43210e94ad75d345",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b90c6a19488cbe2e55b35886c270ba09",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a639323341f5ed0cfcaa83aa3f949cd2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b90c6a19488cbe2e55b35886c270ba09",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "393f0ed045d5d4a20d6a5c96c669e262",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 640.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5eae2bdd4fadae3a9d11f7ab6d8142f2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "393f0ed045d5d4a20d6a5c96c669e262",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "739aff304b4d773c94bdaa98b0897971",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "393f0ed045d5d4a20d6a5c96c669e262",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "1a5bc8fd4559196f678c13938f33d4b5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1b9c33404e091fe1ec1e2bbced75afc0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1a5bc8fd4559196f678c13938f33d4b5",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "129de1584ad0456d56218d9ba7e26f37",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1a5bc8fd4559196f678c13938f33d4b5",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c0bea8624b500ddf3e9be6ab534b11f6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "eef8934c4611af3cd31177b124ba6dc7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c0bea8624b500ddf3e9be6ab534b11f6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "33bea2194519822d6c16d79d4491a2c2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c0bea8624b500ddf3e9be6ab534b11f6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "967144f54fb585c028f658b0ae9a48ec",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8a95f5bd45079c9a41caeb991635459f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "967144f54fb585c028f658b0ae9a48ec",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8166ea4946186138573ff5b295ccd52f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "967144f54fb585c028f658b0ae9a48ec",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "02b9aa5841d5cf7dc530e7b1fe7b5c5c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "306ad5154c839d6f99f484b60994a7ae",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "02b9aa5841d5cf7dc530e7b1fe7b5c5c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b247c647410538467adf75911477f325",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "02b9aa5841d5cf7dc530e7b1fe7b5c5c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2732c87c42952ef8e45ce1b3794ffc63",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7f6d8cbb4cc4747a209d6bbc8563f4e8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2732c87c42952ef8e45ce1b3794ffc63",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "795a7c3042be974700da34bd03552310",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2732c87c42952ef8e45ce1b3794ffc63",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "047711f844bfc7767b42d9a0d5946c82",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4e3d52ec410e821386073598abe6c5b1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "047711f844bfc7767b42d9a0d5946c82",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "27089f41407466a9084274b21607563f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "047711f844bfc7767b42d9a0d5946c82",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "746d66a44546a18ebc60f3bca4ad342e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8b32f2214cebd88fb75814a41a6f6c2c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "746d66a44546a18ebc60f3bca4ad342e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5ada0c484ecc90a685bf3ea44c567a9b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "746d66a44546a18ebc60f3bca4ad342e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b0c44f16477c43b00c19e49a4638dd6c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6497a46e45444dae925d16905253268f",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b0c44f16477c43b00c19e49a4638dd6c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5d2e465241a62c7bdaceb0b78a4d6e4b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b0c44f16477c43b00c19e49a4638dd6c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "690d0dc04afe54e8ee03b8b936c72fb3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8fdd937c4d53f41c142bf181184a2911",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "690d0dc04afe54e8ee03b8b936c72fb3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "699a1a8e4be016edfa597f8db20e9611",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "690d0dc04afe54e8ee03b8b936c72fb3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ba277b384da5b1e468e6f9b952cdf522",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d2fea27a485184f478cc5cae4e0380e5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ba277b384da5b1e468e6f9b952cdf522",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "374d36724b73caf14d9e81a48a8525aa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ba277b384da5b1e468e6f9b952cdf522",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3121f2b3417659c1d8ddca847e969f2f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5746e07a456402a32a67a4b97e59b619",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3121f2b3417659c1d8ddca847e969f2f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "840d78e846d9b3ca385985a48221bd66",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3121f2b3417659c1d8ddca847e969f2f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4f2b78cd4bf6258544984191a321b3ce",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "454c7a74457aa146e6929193896d4003",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4f2b78cd4bf6258544984191a321b3ce",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2d384e1a4e8897e205535790a2586913",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4f2b78cd4bf6258544984191a321b3ce",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "fd3cdb594cb7c18451eb4e92b563f987",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8445c2924c0e13cdabb885b410c75b4c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fd3cdb594cb7c18451eb4e92b563f987",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "33b32e8546fd59a67d025fa42fed4f48",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fd3cdb594cb7c18451eb4e92b563f987",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d76b710d40baf04b956f25a18fc3c401",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7c9ec1e04e5ea0c29021bd88582678ae",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d76b710d40baf04b956f25a18fc3c401",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "daff368f425a26559f2b0ea869bba663",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d76b710d40baf04b956f25a18fc3c401",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5e60f5c34fd0ad4a01ac8797a83b872a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "fb1d9c174db6a00f50db318e6a5403ce",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5e60f5c34fd0ad4a01ac8797a83b872a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "48db83c543834284234f6d834de5187d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5e60f5c34fd0ad4a01ac8797a83b872a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f570160741214a6254273fbc9edacd3c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 704.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "67e439844ef648e7056d149ec0feb459",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f570160741214a6254273fbc9edacd3c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "616951504c8e377c618ed7a89e4926fa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f570160741214a6254273fbc9edacd3c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "73be64294c711d883f36919ad9a4269c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "bd3077b44c9833785fd40fa50dd563ae",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "73be64294c711d883f36919ad9a4269c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f00020dc4d5c3cc54d24e6af4f08c0ec",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "73be64294c711d883f36919ad9a4269c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "bb0eac914d7e550b16852f9b5532c455",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9d1e308444f3c831b5cb27a0907d8185",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bb0eac914d7e550b16852f9b5532c455",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "c9a9443b4c154686edcbb2b746806c0c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "bb0eac914d7e550b16852f9b5532c455",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a07f396b4ca045f856eb49bb2d560379",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9ec6cbaf4850049c66d824bbdd9081db",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a07f396b4ca045f856eb49bb2d560379",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8ab23e1a4adb5a59189f83869a6bed62",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a07f396b4ca045f856eb49bb2d560379",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "41a5c5d742b86a7887cd41bb9cec466a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4cc7212349aabebd4a56ffbf6c4652c2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "41a5c5d742b86a7887cd41bb9cec466a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a3819cf247867847156b77ab599fe3d3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "41a5c5d742b86a7887cd41bb9cec466a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8a562fa04f5ad03182b37fb5ce03d765",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b269099543d5f2eaaec3c69aa3aafa4e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8a562fa04f5ad03182b37fb5ce03d765",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1939a07944944330a7cfca8c6d44b38f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8a562fa04f5ad03182b37fb5ce03d765",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "94ec95a243c65d1217c4d9b4402a104c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f1418245458f1120d1a6d2aae1c8928e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "94ec95a243c65d1217c4d9b4402a104c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "917b33674c407dbe5a6a56bad876c46c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "94ec95a243c65d1217c4d9b4402a104c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b58358ec425ba41f3180f6b5f386f225",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9f6753aa48add68f7eec64a8d9711b4c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b58358ec425ba41f3180f6b5f386f225",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f6050f0f464f709f5327e996de388f6a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b58358ec425ba41f3180f6b5f386f225",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ddbb3016443872f43846a5a54bf6466a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7be3a30144986c3e69fa7a928b53ce56",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ddbb3016443872f43846a5a54bf6466a",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0327eee84ca196ef713ca4b542b5f15c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ddbb3016443872f43846a5a54bf6466a",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d6323add447e333508fa19939eaf6455",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "80f3a95846fe44fe58051da195100657",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d6323add447e333508fa19939eaf6455",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "dceac55e45e120bc5e11a0b6f14467c7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d6323add447e333508fa19939eaf6455",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "328c5c8740d037b5e0cbf694b7a25e4e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d821bfea40d953e73a78af86d6f9718c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "328c5c8740d037b5e0cbf694b7a25e4e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "95ed82ca4fc6e5d11e2532ad8e4130c8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "328c5c8740d037b5e0cbf694b7a25e4e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ff65f59349568f5b4e67d89608d53320",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c026d4d8456c077dd62c67896b6f5259",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ff65f59349568f5b4e67d89608d53320",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5057096f47c44ebdbe5f85a081211b0d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ff65f59349568f5b4e67d89608d53320",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "2df970b642636567f96af9a0918607be",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3cd9800e4ef7e7d59d6cf8a521a0da38",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "2df970b642636567f96af9a0918607be",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f94606634115cea5f77ff1bdb2df0b2e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "2df970b642636567f96af9a0918607be",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5a51aa224b52709830bd388aca97e489",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9ebb8a124194c3f80e7c7e81a9b9be0e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5a51aa224b52709830bd388aca97e489",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8cd0e5de4a92456cfa44508c76aef622",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5a51aa224b52709830bd388aca97e489",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "ae6e2d8e4e753c807b7ff0b4219b7143",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e14920a84b8b0011712a83a1b983411a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ae6e2d8e4e753c807b7ff0b4219b7143",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1f9b8afb4acbce658c3622ab8e038184",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ae6e2d8e4e753c807b7ff0b4219b7143",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "52fc797540c7345772740cb1b9783531",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4596a52d416d8fd95ffe61a9ad800bc9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "52fc797540c7345772740cb1b9783531",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "847e4cdb4cab44705424ffb9d5d9be8e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "52fc797540c7345772740cb1b9783531",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "38912c9b484bbd12138c94a5233a6ddd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 768.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4c60d17a49d67991c2c148848553c01e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "38912c9b484bbd12138c94a5233a6ddd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a4f0067f4dcfa4c7fb1a9d80dcecc60a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "38912c9b484bbd12138c94a5233a6ddd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f9969899468d433da8fa628c9567a3f0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "9f865d6b41090fb7e52004951d7e4e07",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f9969899468d433da8fa628c9567a3f0",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4b8d81424a3a937be3b208a500ac3058",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f9969899468d433da8fa628c9567a3f0",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4f18fc574618a3a23e29a585fd7d1879",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c9a4ae034ecb38a35eac61826a7ad056",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4f18fc574618a3a23e29a585fd7d1879",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1757e4144bdf679817019dbb3fb8977a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4f18fc574618a3a23e29a585fd7d1879",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e341bf5c4cd0d47e784f3e80aead8e2c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "1930690b4e408dc0767d5486a650cb6e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e341bf5c4cd0d47e784f3e80aead8e2c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "cc0ebdfe4e1d223871f674b96e2a8281",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e341bf5c4cd0d47e784f3e80aead8e2c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b12e45db40e7af2c4e184db45fa42a65",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4b90aa334b960ae3741dd3ad5ea746cd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b12e45db40e7af2c4e184db45fa42a65",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f173c40d4ec2a27c52c22c97a12d015b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b12e45db40e7af2c4e184db45fa42a65",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7c00afe04f392df59799678e9012526e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e23aca7b4e20edc510f534b7c3312eac",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7c00afe04f392df59799678e9012526e",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "c20e716c459bfd5ab4615f914f83f428",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7c00afe04f392df59799678e9012526e",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f296f0af498715622b1834bb84b1e582",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "ed8b759d465c63926c187f9dba9868b1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f296f0af498715622b1834bb84b1e582",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "fc71da0749ce46d9c1780c94082c3b06",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f296f0af498715622b1834bb84b1e582",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "58e724b740410ccf1443ca94715e11cd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d713a318440e644d996abcb917a840b1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "58e724b740410ccf1443ca94715e11cd",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "10565472438cad5f35f528a3f156f1e5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "58e724b740410ccf1443ca94715e11cd",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a17450db4cc7ccc18eb59c94c1a33a3b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b6d4e4574e41bc87621da09018dd2265",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a17450db4cc7ccc18eb59c94c1a33a3b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "66c59fed48ac9b6089c806894f44690c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a17450db4cc7ccc18eb59c94c1a33a3b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "55cbf449424a236ff235e38c321ad2a1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "7b36c0f840195ae971f204be4ce577bc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "55cbf449424a236ff235e38c321ad2a1",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0127b85f4ce697f651850e97454a2057",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "55cbf449424a236ff235e38c321ad2a1",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f72faa574f2cb69b1378f79b251f8807",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "38870c3d42b31ab66d7320a63868894a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f72faa574f2cb69b1378f79b251f8807",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "4645559c4c8055cf8f62b0ab78672aef",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f72faa574f2cb69b1378f79b251f8807",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8d8dad334f6554f4d4e9429c514e2e46",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a9c1f5d94a27d78e410d058bddad7bc1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8d8dad334f6554f4d4e9429c514e2e46",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "48d9590a4553dd7347fcab80e249673d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8d8dad334f6554f4d4e9429c514e2e46",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "75a8ca2546516377f60964ba94d69ab4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "2470084c43b15e041a7c6a826f1a6244",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "75a8ca2546516377f60964ba94d69ab4",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d78598b74e492ff15766e19df0c5ad26",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "75a8ca2546516377f60964ba94d69ab4",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "c6dacb9449c408c81ef4769ecde4e113",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e736918745354f46b01647b7be03916b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c6dacb9449c408c81ef4769ecde4e113",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "527e959d4020bcb7f0d5678b51a488c1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c6dacb9449c408c81ef4769ecde4e113",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "817a681a4db4adbef7261c8fe26867db",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0134e01142430c51ad6f7999c0537200",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "817a681a4db4adbef7261c8fe26867db",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "aec40d8a40478af109127da3f6460179",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "817a681a4db4adbef7261c8fe26867db",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "928732f848eea3b98912a79127d5ee24",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8059ddbf41ff458f26d218b1d792b868",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "928732f848eea3b98912a79127d5ee24",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "97db1d73496b1daaf02005bdddf72752",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "928732f848eea3b98912a79127d5ee24",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "7bb683b2403fe36e527715b1656bb8c8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 832.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "d14612a94ba8ed9705d209a8c309fef1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7bb683b2403fe36e527715b1656bb8c8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "2f6f59a3421438d6b83bee8e718dd847",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "7bb683b2403fe36e527715b1656bb8c8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "f2ae5be74170af2e1d83c4afdfa10e61",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "0c24e2ad4e7818520bbb3aaebd9814e8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f2ae5be74170af2e1d83c4afdfa10e61",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "0a06ab0f4c248c80a69320895c870123",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f2ae5be74170af2e1d83c4afdfa10e61",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a8efcdd142a48c08fd0d9ab3012dd909",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5c9d8c764f64ccc003de8ab20e87b2bd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a8efcdd142a48c08fd0d9ab3012dd909",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "108b720340aa0926a1248da9556a0f8b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a8efcdd142a48c08fd0d9ab3012dd909",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "755f331149006720776132befd92b616",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "efd8ac77456cd7af747811b9383e4b67",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "755f331149006720776132befd92b616",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "d3b34f2444a699573cd30dac0a31edfc",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "755f331149006720776132befd92b616",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9aa5e891404a68cfce3088a0cc1bf1d8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6ea6d49643082305dc47388c5e9dc96b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9aa5e891404a68cfce3088a0cc1bf1d8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7bbbbf32470f6dcaa508189c5a30891f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9aa5e891404a68cfce3088a0cc1bf1d8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "b583f1c949873670a23916b049c7d4f8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "97c5b8ae411c1dc5e8d948a5803f08f0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b583f1c949873670a23916b049c7d4f8",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "94307f124f3c0982fab674900c5c60ce",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b583f1c949873670a23916b049c7d4f8",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "06d7be7741a3d4f799f4f882b2ff35de",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cd050ba142687f67a1e630834e23ea66",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "06d7be7741a3d4f799f4f882b2ff35de",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8e74491347e3e6f0b820ba92f53780d9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "06d7be7741a3d4f799f4f882b2ff35de",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "9a53f7854c8a722cc14b7e8b9f6c693c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5991e1eb484b3a56dbc8769f38641074",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9a53f7854c8a722cc14b7e8b9f6c693c",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "65022ed445a547f68921a4a5aa51e5a5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "9a53f7854c8a722cc14b7e8b9f6c693c",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8fed2f7643db96bd0a8dc6b41f585694",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "5b6c09ac434f14d9e56e8987da5e4ad4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8fed2f7643db96bd0a8dc6b41f585694",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "880ebae649b9794e614110b814fb85b9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8fed2f7643db96bd0a8dc6b41f585694",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "db8dc8234de49552935665a140b31059",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "338e1f0a43e0ffb653ef4da7cd6ab2cf",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "db8dc8234de49552935665a140b31059",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5f4a9c82421a6ef60e14a79235091153",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "db8dc8234de49552935665a140b31059",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "0e2a3a254d772f767c617fac8e96cf3b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "adf164ce4193084c424fcdbad92734e4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "0e2a3a254d772f767c617fac8e96cf3b",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a3b38aea450d86aae4a07e98a8650898",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "0e2a3a254d772f767c617fac8e96cf3b",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a892594c4fdfc6fd12c585bc0f87ba67",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b8d0ac3c4177a3774776c1bbfde3314b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a892594c4fdfc6fd12c585bc0f87ba67",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "8550929c4f951d00db9699a1b0b81ff2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a892594c4fdfc6fd12c585bc0f87ba67",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "86a07a8540fed95b429d25a9418d832d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4a635c1d41e65c8a834e2eb369ea480c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "86a07a8540fed95b429d25a9418d832d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "57f4d98746cb118f7363008a7481ce17",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "86a07a8540fed95b429d25a9418d832d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "87731c62493740ebc34084a05adf67a2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "6308cae34c78c81b7a65959677447e80",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "87731c62493740ebc34084a05adf67a2",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "c9cc2a314671496ed4f71b9b8d852114",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "87731c62493740ebc34084a05adf67a2",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "53ad32df4d2dd0dbf036eab92ea890dc",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e4b8857e480640ba6f25a3a36a814408",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "53ad32df4d2dd0dbf036eab92ea890dc",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "6bb5408345a6f8db30b5f19e88efc644",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "53ad32df4d2dd0dbf036eab92ea890dc",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "e544fc444248c92ca92e11bccd386cd3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b500e4f040f739aa2210b0809480d009",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e544fc444248c92ca92e11bccd386cd3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b70e19ac495456a7849793ab537dbbc9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "e544fc444248c92ca92e11bccd386cd3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8d163efc43d74cd782f22c8631fbcbd7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 896.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "67cbb04e457ff23fa8e7b29d612b4a11",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8d163efc43d74cd782f22c8631fbcbd7",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "9ec17a02441ad3203a62e5b70357312e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8d163efc43d74cd782f22c8631fbcbd7",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "d979d90c48369fe167ca3ebfdfb238e9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "f9012a364881afba957b25a4cb095e9b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d979d90c48369fe167ca3ebfdfb238e9",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5096b7f64827a825656d2a81704bf7d1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "d979d90c48369fe167ca3ebfdfb238e9",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "504f1d8947e8738ab2d790bc0501129f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 64.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "4d5d391645baeb44cdb84298e73a178e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "504f1d8947e8738ab2d790bc0501129f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "403cae994c48e4b58652b6bd5043101d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "504f1d8947e8738ab2d790bc0501129f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "015db6a049fd54c77fd77e87275346c6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 128.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "a415b2bf43d615cc066257b636cb0072",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "015db6a049fd54c77fd77e87275346c6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "3d3f39a847ebddbb0fb7809cf324881a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "015db6a049fd54c77fd77e87275346c6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "a83f48e0448597f7360c79955bb12b1d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 192.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "e390648148c03a9c1e706c9e47f444dd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a83f48e0448597f7360c79955bb12b1d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "37af43ee48577290a01f30b88f240fdb",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "a83f48e0448597f7360c79955bb12b1d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "81134e714257d750832981b4cb54fe4f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 256.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "8f4df0c740091eea52678bab9ad21250",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "81134e714257d750832981b4cb54fe4f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "a51574cc4de13598dafb30b9a75185e8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "81134e714257d750832981b4cb54fe4f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "3f0515114a959a1b1678e08521b2da5f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 320.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c7a96a99488d17e147f03ba862dc88a1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3f0515114a959a1b1678e08521b2da5f",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "1ffdc878490e7950e7f4be8b3995ea34",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "3f0515114a959a1b1678e08521b2da5f",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "770db7e443d778e8ce3dc880163a97e3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "babd187542d6391d9f737fb0a152456c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "770db7e443d778e8ce3dc880163a97e3",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "f950f8f147d39659170ea5b9010311c1",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "770db7e443d778e8ce3dc880163a97e3",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "4a055200411251d79bc489a62d6abc36",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 448.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c4681e1746469a1fd6e72ca92d51227e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4a055200411251d79bc489a62d6abc36",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "948d19e2480468c10b2979bf194a6f26",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4a055200411251d79bc489a62d6abc36",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "733ce65a478f2fe94730058a37b12f47",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 512.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "03aad9614ddf2e2f7ddcd991719f9e2d",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "733ce65a478f2fe94730058a37b12f47",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "b1c3d3904b590fcf57cde5892d167e53",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "733ce65a478f2fe94730058a37b12f47",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "5940263240c4f4e0db7d588bd24988ce",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 576.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "cbf5a0ca444a8d6500260289fc533141",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5940263240c4f4e0db7d588bd24988ce",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "adbaa90247733f2e2a37d891b9cb4ceb",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "5940263240c4f4e0db7d588bd24988ce",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "8bb76c9c4b2e435260562585a3c9b270",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 640.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "b92bb3ed4f26dd250454ae946221a5b8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8bb76c9c4b2e435260562585a3c9b270",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "5a2e8c59437cf059967278807de0f867",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "8bb76c9c4b2e435260562585a3c9b270",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "be742be64dd86e6496e24db43dddc21d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 704.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "97fecfbd47dfe78130919ba6fba525e1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "be742be64dd86e6496e24db43dddc21d",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "7a92e7784b37b6febbb67cbafe91e646",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "be742be64dd86e6496e24db43dddc21d",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "980c01fb4983d2fff788a280cf15a133",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 768.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c661489a4a8951b6a9a8208915e39256",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "980c01fb4983d2fff788a280cf15a133",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "95be51d64cddf6c93fffdca86a3442d7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "980c01fb4983d2fff788a280cf15a133",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "fc6133364aa4883948d11fb2da2fd9c6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 832.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "669988364151927d913c9b9eb7ef657b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fc6133364aa4883948d11fb2da2fd9c6",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "abd42f264b0c97cdeead359fe6a3840b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fc6133364aa4883948d11fb2da2fd9c6",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "03c1b8db4a527596b552c5a0b6f65a38",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 896.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "3a49d3894b4b56bc2b0a24bcabc2cce4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "03c1b8db4a527596b552c5a0b6f65a38",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "ca6f25dc46b0e9d325c4ac94867068bd",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "03c1b8db4a527596b552c5a0b6f65a38",
+			"Name": "Asset Cargo"
+		},
+		{
+			"ID": "09d3269f4ea8b8da034f948a3243f6f1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "2f8896414f7dc8d08b7eb4832ce60c1a",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 0.0,
+					"Z": 960.0
+				}
+			},
+			"Buffer": {
+				"Entries": []
+			}
+		},
+		{
+			"ID": "c562b4244c22f9eeef64ee9d064f00ac",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "09d3269f4ea8b8da034f948a3243f6f1",
+			"Name": "MeshCollider"
+		},
+		{
+			"ID": "22a8949241e2c955310e5e8b2aabc195",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "09d3269f4ea8b8da034f948a3243f6f1",
+			"Name": "Asset Cargo"
+		}
+	]
+}
