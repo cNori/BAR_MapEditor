@@ -37,9 +37,9 @@
 			"Targets": [
 				{
 					"Name": "Windows 64bit",
-					"Output": "Output\\Win64",
+					"Output": "Output\\Release\\Win64",
 					"Platform": 2,
-					"Mode": 0,
+					"Mode": 2,
 					"CustomDefines": null,
 					"PreBuildAction": null,
 					"PostBuildAction": null

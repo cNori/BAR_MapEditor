@@ -60,6 +60,10 @@ public class UIRoot : Script
 
     public static VerticalPanel TerainBrush;
 
+    public int Major;
+    public int Minor;
+    public int Pach;
+    Label version;
     public override void OnAwake()
     {
 #if FLAX_EDITOR
@@ -79,6 +83,13 @@ public class UIRoot : Script
 
         Root = gamewindow.AddChild<Panel>();
         Root.SetAnchorPreset(AnchorPresets.StretchAll, false);
+
+        version = Root.AddChild<Label>();
+        version.HorizontalAlignment = TextAlignment.Near;
+        version.VerticalAlignment = TextAlignment.Near;
+        version.TextColor = Color.Black;
+        version.TextColorHighlighted = Color.Black;
+        version.Font.Size = 8;
     }
 
     public override void OnStart()
@@ -128,6 +139,8 @@ public class UIRoot : Script
     public bool Drag = false;
     public override void OnUpdate()
     {
+        version.Text = "Version " + Major + "." + Minor + "." + Pach;
+
         if (!TerainBrush.Visible)
             TerainBrush.Location = Input.MousePosition;
 
