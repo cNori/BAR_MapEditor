@@ -52,7 +52,7 @@ Map Editor is build using [Flax Engine (1.9)](https://flaxengine.com)
 🟡 - fresh out of the owen (incompilte) <br>
 🟢 - ready for use but in testing <br>
 🔵 - stabile no bugs <br>
-🟣 - Planed but maybe never added
+🟣 - Planed but maybe never added<br>
 ❌ - not iplemented <br>
 ✔️ - done and usable <br>
 </details>
