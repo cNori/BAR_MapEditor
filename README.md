@@ -3,7 +3,7 @@ Map Editor is build using [Flax Engine (1.9)](https://flaxengine.com)
 
 # Features Done so far
 ✔️🟡 **Object Placer**<br>
-➖🔴**Asset Importer**  (only .s3o)<br>
+➖🟡**Asset Importer**  (only .s3o)<br>
 ❌🔴**Asset Exporter**<br>
 ❌🔴**Save Editor Settings**<br>
 ❌🔴**Asset Editor**<br>
@@ -19,6 +19,7 @@ Map Editor is build using [Flax Engine (1.9)](https://flaxengine.com)
 🟡 - added to editor but is in testing <br>
 🟢 - ready <br>
 🔵 - stabile no bugs <br>
+🟣 - Planed but maybe never added
 ❌ - not iplemented <br>
 ➖ - some of it is implemeted <br>
 ✔️ - done and usable <br>
