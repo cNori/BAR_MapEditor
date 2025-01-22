@@ -7,7 +7,7 @@ using FlaxEngine;
 namespace Game;
 public static class Export
 {
-    public static float UnitScale = 1;
+    public const float UnitScale = 8;
     public static void ExportFP()
     {
         if (string.IsNullOrEmpty(Shared.ProjectPath))

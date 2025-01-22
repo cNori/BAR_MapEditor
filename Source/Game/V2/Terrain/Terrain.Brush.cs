@@ -13,7 +13,9 @@ public partial class Terrain : Script
         Utility.Random random = new Utility.Random((uint)(BrushPosition.X + BrushPosition.Y));
 
         int pid = 1;
-        var space = (10 + (int)BrushMinDistance);
+
+        //GUARD IT
+        var space = Mathf.Max(Mathf.CeilToInt(BrushMinDistance),1);
         Float2[] points = new Float2[(int)(BrushSize * BrushSize)];
         points[0] = new Float2(BrushPosition.X, BrushPosition.Y);
 
@@ -83,11 +85,20 @@ public partial class Terrain : Script
                     random.Next();
                     var ro = Mathf.FloorToInt(random.Get01() * selected.Count);
                     var selectedAsset = selected[Mathf.Clamp(ro, 0, selected.Count - 1)];
-                    chunk.SpawnAsset(selectedAsset, p, 0);
+                    if (IsPointInsideTheTerrainBounds2D(p))
+                    {
+                        chunk.SpawnAsset(selectedAsset, p, BrushGetRandomRotaction(random));
+                    }
                 }
             }
         }
     }
+
+    private float BrushGetRandomRotaction(Utility.Random random)
+    {
+        return Mathf.Remap(random.Get01(), 0,1,-180,180);
+    }
+
     public float SampleBrush(Float2 cords)
     {
         var uv = BrushPosition - cords;

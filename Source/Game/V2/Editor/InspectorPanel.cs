@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using FlaxEngine;
 using FlaxEngine.GUI;
 
@@ -32,6 +33,17 @@ public class InspectorPanel : ContainerControl
             _state = CheckBoxState.Checked;
         }
     }
+    struct PlayModeSettings
+    {
+        public string PathToBeyondAllReason = "";
+        public string MapName = "";
+        public string SpringEngineVersion = "";
+
+        public PlayModeSettings()
+        {
+        }
+    }
+
     int selected;
     List<VerticalPanel> TabPanels = new List<VerticalPanel>();
     public InspectorPanel() : base()
@@ -40,7 +52,7 @@ public class InspectorPanel : ContainerControl
 
         //background
         var bc = AddChild<Control>();
-        bc.SetAnchorPreset(AnchorPresets.HorizontalStretchTop,false);
+        bc.SetAnchorPreset(AnchorPresets.HorizontalStretchTop, false);
         bc.Height = TabSize;
         bc.BackgroundColor = Style.Current.LightBackground;
 
@@ -50,6 +62,116 @@ public class InspectorPanel : ContainerControl
         bc2.BackgroundColor = Style.Current.LightBackground.RGBMultiplied(0.75f);
         bc2.X += TabSize;
         bc2.Y += TabSize;
+
+        var rungame = AddChild<Button>();
+        rungame.SetColors(Color.Green);
+        rungame.Width = TabSize;
+        rungame.Height = TabSize;
+
+        rungame.Clicked += () =>
+            {
+                var p = Path.Join(Globals.ProjectFolder,"PlayModeSettings.json");
+
+
+                Debug.Log(p);
+                if (File.Exists(p))
+                {
+                    PlayModeSettings settings;
+
+                    try
+                    {
+                        settings = FlaxEngine.Json.JsonSerializer.Deserialize<PlayModeSettings>(File.ReadAllText(p));
+                    }
+                    catch (Exception e)
+                    {
+                        FlaxEngine.Debug.LogException(e);
+                        return;
+                    }
+
+                    var bardata = Path.Combine(settings.PathToBeyondAllReason, "data");
+                    var enginepath = Path.Combine(bardata, "engine", settings.SpringEngineVersion, "spring.exe");
+
+                    var argspath = Path.Join(Globals.ProjectFolder, "Args.txt");
+
+                    File.WriteAllText(argspath,
+                        @"[game]
+                        {
+                            [allyteam1]
+                            {
+                                numallies = 0;
+                            }
+                            [team1]
+                            {
+                                teamleader = 0;
+                                allyteam = 1;
+                            }
+                            [ai0]
+                            {
+                                shortname = NullAI;
+                                name = NullAI;
+                                version = 0.1;
+                                team = 1;
+                                host = 0;
+                            }
+                            [modoptions]
+                            {
+
+
+                            }
+                            [allyteam0]
+                            {
+                                numallies = 0;
+                            }
+                            [team0]
+                            {
+                                teamleader = 0;
+                                allyteam = 0;
+                            }
+                            [player0]
+                            {
+                                team = 0;
+                                name = BAR_Editor;
+                            }
+                            mapname = " + settings.MapName + @";
+                            myplayername = BAR_Editor;
+                            ishost = 1;
+                            gametype = rapid://byar:test;
+                            nohelperais = 0;
+                        }");
+
+                    Debug.Log(bardata);
+                    Debug.Log(enginepath);
+
+                    if (File.Exists(enginepath))
+                    {
+                        CreateProcessSettings processSettings = new()
+                        {
+                            Arguments = $"--isolation --write-dir {bardata} {argspath}",
+                            FileName = enginepath,
+                            HiddenWindow = false,
+                            WaitForEnd = false,
+                            LogOutput = true,
+                            SaveOutput = false,
+                            ShellExecute = false
+                        };
+                        rungame.SetColors(Color.Red);
+                        rungame.Enabled = false;
+
+
+                        JobSystem.Dispatch((int i) =>
+                        {
+                            Platform.CreateProcess(ref processSettings);
+                            rungame.Enabled = true;
+                            rungame.SetColors(Color.Green);
+                        });
+                    }
+                }
+                else
+                {
+                    File.WriteAllText(p,FlaxEngine.Json.JsonSerializer.Serialize(new PlayModeSettings()));
+                }
+            };
+
         bc2.Width -= TabSize;
 
         VerticalPanel tabsPanel = AddChild<VerticalPanel>();

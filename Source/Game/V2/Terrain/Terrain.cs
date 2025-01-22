@@ -14,13 +14,13 @@ public partial class Terrain : Script
     public float Scale = 1.0f;
     [NoSerialize]public Chunk[] Chunks = [];
 
-    public Color BrushColor;
-    public bool RemoveObjects;
-    public float BrushSize = 10.0f;
-    public float BrushStrength = 1.0f;
-    public float BrushFalloff = 0.5f;
-    public float BrushMinDistance = 10.0f;
-    public Float2 BrushPosition;
+    [NoSerialize] public Color BrushColor;
+    [NoSerialize] public bool RemoveObjects;
+    [NoSerialize] public float BrushSize = 10.0f;
+    [NoSerialize] public float BrushStrength = 1.0f;
+    [NoSerialize] public float BrushFalloff = 0.5f;
+    [NoSerialize] public float BrushMinDistance = 10.0f;
+    [NoSerialize] public Float2 BrushPosition;
     public Int2 Size { get =>size; set => Resize(value); }
     private bool isDirty;
     public bool testNoseHeightMap;
@@ -181,8 +181,8 @@ public partial class Terrain : Script
 
     public float WorldGetHeight(float x, float y)
     {
-        x = Mathf.Clamp(x, 0, (Size.X-1) * ChunkSize);
-        y = Mathf.Clamp(y, 0, (Size.Y-1) * ChunkSize);
+        x = Mathf.Clamp(x, 0, (Size.X * ChunkSize) - 1);
+        y = Mathf.Clamp(y, 0, (Size.Y * ChunkSize) - 1);
 
 
         return GetHeight(Mathf.FloorToInt(x), Mathf.FloorToInt(y));
@@ -226,6 +226,11 @@ public partial class Terrain : Script
                 list.Add(Chunks[i]);
         }
         return list;
+    }
+
+    public bool IsPointInsideTheTerrainBounds2D(Float3 point)
+    {
+        return Mathf.IsInRange(point.X, 0, Size.X * ChunkSize) && Mathf.IsInRange(point.Z, 0, Size.Y * ChunkSize);
     }
 }
 

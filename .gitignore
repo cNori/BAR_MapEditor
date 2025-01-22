@@ -53,3 +53,5 @@ _ReSharper*/
 
 # Ignore Nuget packages folder
 packages/
+Args.txt
+PlayModeSettings.json

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using FlaxEngine;
-
 namespace Game;
 
 [ExecuteInEditMode]
@@ -20,7 +19,6 @@ public class GetDataFromLua : Script
 
     public override void OnUpdate()
     {
-        data.Clear();
         input = input.Replace(" ", "");
         input = input.RemoveNewLine();
         input = input.Replace("\t", "");

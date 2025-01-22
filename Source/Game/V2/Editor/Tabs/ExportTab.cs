@@ -13,7 +13,7 @@ public class ExportTab
         Utility.UI.TitleProperty(panel, "Export");
         Utility.UI.TextProperty(panel, ".sdd Path", Shared.SetsddPath, Shared.ProjectPath);
 
-        Utility.UI.FloatProperty(panel, "UnitScale", (float f)=>{ Export.UnitScale = f; },1,false);
+        //Utility.UI.FloatProperty(panel, "UnitScale", (float f)=>{ Export.UnitScale = f; },1,false);
         Utility.UI.ButtonProperty(panel, "Export Feature Placement", ()=> 
         {
             Export.ExportFP();

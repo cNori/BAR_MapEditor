@@ -122,9 +122,10 @@ public class S3O
                 }
 
                 var Model = Content.CreateVirtualAsset<Model>();
-                Model.SetupLODs([1]);
+                Model.SetupLODs([2]);
                 Model.LODs[0].Meshes[0].UpdateMesh(vertices, triangles, normals, null, uv);
                 var materialInstance = Content.CreateVirtualAsset<MaterialInstance>();
+                var materialInstanceLOD1 = Content.CreateVirtualAsset<MaterialInstance>();
                 materialInstance.BaseMaterial = Content.Load<Material>(Path.Join(Globals.ProjectContentFolder, "ObjectMaterial.flax"));
 
 

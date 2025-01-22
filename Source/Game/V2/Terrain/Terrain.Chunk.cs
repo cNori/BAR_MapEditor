@@ -45,7 +45,7 @@ public partial class Terrain : Script
             var obj = model.AddScript<Terrain.Object>();
             model.Name = asset.Name;
             model.Position = position;
-            model.Scale = new(0.20f);
+            model.Scale = new(0.125f);
 
             model.Orientation = Quaternion.RotationY(rotation);
             model.Model = asset.ModelDisplay;
