@@ -4,7 +4,7 @@ Map Editor is build using [Flax Engine (1.9)](https://flaxengine.com)
 # Features
 
 **Editor**<br>
-&emsp;❌🔴 **Save Editor Settings**<br>
+&emsp;❌🟠 **Save Editor Settings**<br>
 
 **Asset**<br>
 &emsp;❌🟣 **Asset Editor**<br>
