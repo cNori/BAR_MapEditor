@@ -10,7 +10,7 @@ public static class Export
     public const float UnitScale = 8;
     public static void ExportFP()
     {
-        if (string.IsNullOrEmpty(Shared.ProjectPath))
+        if (string.IsNullOrEmpty(EditorSettings.Instance.MapPath))
             return;
         var chunks = Terrain.Instance.GetChunksWithObjects();
 
@@ -69,7 +69,7 @@ public static class Export
 #if FLAX_EDITOR
         Debug.Log(sb.ToString());
 #endif
-        var outdir = Path.Join(Shared.ProjectPath, "mapconfig", "featureplacer");
+        var outdir = Path.Join(EditorSettings.Instance.MapPath, "mapconfig", "featureplacer");
         if(!Directory.Exists(outdir))
             Directory.CreateDirectory(outdir);
         var stream = File.CreateText(Path.Join(outdir, "set.lua"));

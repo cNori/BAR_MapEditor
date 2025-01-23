@@ -11,16 +11,14 @@ public static class Import
     public static Texture ColorMapTexture;
     public static Texture HeightMapTexture;
 
-    public static string ProjectHeightMapTextureSource = "maps/HeightMap.png";
-    public static string ProjectColorMapTextureSource = "maps/ColorMap.png";
-    public static string ProjectAssetsSource = "objects3d";
-    public static string ProjectAssetsTexturesSource = "unittextures";
-
     public static List<Terrain.Asset> Assets = [];
 
     public static bool ImportProjectHeightMap()
     {
-        var p = System.IO.Path.Join(Shared.ProjectPath, ProjectHeightMapTextureSource);
+        var p = EditorSettings.Instance.GetMapHeightMapTextureSource();
+        Debug.Log("Importing HeightMap from");
+        Debug.Log(p);
+
         if (System.IO.Path.Exists(p))
         {
             HeightMapTexture = Texture.FromFile(p);
@@ -30,7 +28,9 @@ public static class Import
     }
     public static bool ImportProjectColorMap()
     {
-        var p = System.IO.Path.Join(Shared.ProjectPath, ProjectColorMapTextureSource);
+        var p = EditorSettings.Instance.GetMapColorMapTextureSource();
+        Debug.Log("Importing ColorMap from");
+        Debug.Log(p);
         if (System.IO.Path.Exists(p))
         {
             ColorMapTexture = Texture.FromFile(p);
@@ -42,7 +42,7 @@ public static class Import
     {
         JobSystem.Dispatch((int _) =>
         {
-            var p = System.IO.Path.Join(Shared.ProjectPath, ProjectAssetsSource);
+            var p = EditorSettings.Instance.GetMapAssetsSource();
 
             string[] files = Directory.GetFiles(p, "*.s3o", SearchOption.AllDirectories);
             for (int i = 0; i < files.Length; i++)
@@ -60,7 +60,7 @@ public static class Import
 
     public static bool ProjectPathCheak(string input)
     {
-        var p = System.IO.Path.Join(Shared.ProjectPath, input);
+        var p = EditorSettings.Instance.MapPath;
         if (System.IO.Path.Exists(p))
         {
             return true;
@@ -72,7 +72,7 @@ public static class Import
     {
         if (ProjectPathCheak(arg))
         {
-            ProjectHeightMapTextureSource = arg;
+            EditorSettings.Instance.MapHeightMapTextureSource = arg;
             return arg;
         }
         return arg;
@@ -82,7 +82,7 @@ public static class Import
     {
         if (ProjectPathCheak(arg))
         {
-            ProjectColorMapTextureSource = arg;
+            EditorSettings.Instance.MapColorMapTextureSource = arg;
             return arg;
         }
         return arg;
@@ -92,7 +92,7 @@ public static class Import
     {
         if (ProjectPathCheak(arg))
         {
-            ProjectAssetsTexturesSource = arg;
+            EditorSettings.Instance.MapAssetsTexturesSource = arg;
             return arg;
         }
         return arg;
@@ -102,7 +102,7 @@ public static class Import
     {
         if (ProjectPathCheak(arg))
         {
-            ProjectAssetsSource = arg;
+            EditorSettings.Instance.MapAssetsSource = arg;
             return arg;
         }
         return arg;

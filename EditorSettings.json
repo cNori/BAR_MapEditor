@@ -1,0 +1,10 @@
+{
+	"Map": "NATG",
+	"MapVersion": "v0.0.1",
+	"BeyondAllReasonPath": "C:\\Users\\BlackBack\\AppData\\Local\\Programs\\Beyond-All-Reason",
+	"BeyondAllReasonEngineVersion": "rel2501.2025.01.5",
+	"MapHeightMapTextureSource": "maps/HeightMap.png",
+	"MapColorMapTextureSource": "maps/ColorMap.png",
+	"MapAssetsSource": "objects3d",
+	"MapAssetsTexturesSource": "unittextures"
+}

@@ -13,7 +13,7 @@ public static class Utility
         public static void TitleProperty(VerticalPanel parent, string Name)
         {
             var hp = parent.AddChild<HorizontalPanel>();
-            hp.Size = new Float2(400, 24);
+            hp.Size = new Float2(parent.Width, 24);
             var label = hp.AddChild<Label>();
             label.SetAnchorPreset(AnchorPresets.StretchAll, false);
             label.Text = Name;
@@ -24,8 +24,8 @@ public static class Utility
             hp.Width = parent.Width;
             hp.Height = PropertyHeight;
             var label = hp.AddChild<Label>();
-            hp.Width = 100;
-            hp.Height = PropertyHeight;
+            label.Width = 100;
+            label.Height = PropertyHeight;
             label.HorizontalAlignment = TextAlignment.Near;
             var value = hp.AddChild<TextBox>();
             value.Height = PropertyHeight;
@@ -83,8 +83,8 @@ public static class Utility
             hp.Width = parent.Width;
             hp.Height = PropertyHeight;
             var label = hp.AddChild<Label>();
-            hp.Width = 100;
-            hp.Height = PropertyHeight;
+            label.Width = 100;
+            label.Height = PropertyHeight;
             label.HorizontalAlignment = TextAlignment.Near;
             var value = hp.AddChild<TextBox>();
             value.Height = PropertyHeight;
@@ -135,14 +135,14 @@ public static class Utility
             }
             label.Text = Name;
         }
-        public static void TextProperty(VerticalPanel parent, string Name, Func<string, string> OnValueChanged, string DefaultValue)
+        public static TextBox TextProperty(VerticalPanel parent, string Name, Func<string, string> OnValueChanged, string DefaultValue)
         {
             var hp = parent.AddChild<HorizontalPanel>();
             hp.Width = parent.Width;
             hp.Height = PropertyHeight;
             var label = hp.AddChild<Label>();
-            hp.Width = 100;
-            hp.Height = PropertyHeight;
+            label.Width = 100;
+            label.Height = PropertyHeight;
             label.HorizontalAlignment = TextAlignment.Near;
             var value = hp.AddChild<TextBox>();
             value.Width = hp.Width - label.Width;
@@ -155,6 +155,8 @@ public static class Utility
                 value.Text = OnValueChanged(value.Text);
             };
             label.Text = Name;
+
+            return value;
         }
         public static void ButtonProperty(VerticalPanel parent, string Name, Action OnClicked)
         {
@@ -180,8 +182,8 @@ public static class Utility
             hp.Width = parent.Width;
             hp.Height = PropertyHeight;
             var label = hp.AddChild<Label>();
-            hp.Width = 100;
-            hp.Height = PropertyHeight;
+            label.Width = 100;
+            label.Height = PropertyHeight;
             label.HorizontalAlignment = TextAlignment.Near;
             label.Text = Name;
             var value = hp.AddChild<CheckBox>();

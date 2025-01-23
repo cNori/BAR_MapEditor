@@ -136,7 +136,7 @@ public class S3O
 
 
 
-                        var p = Path.Join(Game.Shared.ProjectPath, Game.Import.ProjectAssetsTexturesSource);
+                        var p = EditorSettings.Instance.GetMapAssetsTexturesSource();
                         var files = Directory.EnumerateFiles(p, "*.*", SearchOption.AllDirectories)
                         .Where(s => s.EndsWith(".png") || s.EndsWith(".tga"));
 

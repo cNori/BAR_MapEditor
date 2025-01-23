@@ -49,9 +49,7 @@ public class UIRoot : Script
         }
     }
 
-
     public static Panel Root { get; private set; }
-
     private const float spacersize = 4;
     float inspectorsize = 300;
     private Spacer spacer;
@@ -59,13 +57,15 @@ public class UIRoot : Script
     private InspectorPanel Inspector;
 
     public static VerticalPanel TerainBrush;
-
+    public static HorizontalPanel ToolBarPanel;
     public int Major;
     public int Minor;
     public int Pach;
     Label version;
     public override void OnAwake()
     {
+        BAREditor.Init();
+
 #if FLAX_EDITOR
         var gamewindow = Editor.Instance.Windows.GameWin;
 #else
@@ -90,12 +90,21 @@ public class UIRoot : Script
         version.TextColor = Color.Black;
         version.TextColorHighlighted = Color.Black;
         version.Font.Size = 8;
+
+        
     }
 
     public override void OnStart()
     {
         Viewport = Root.AddChild<ViewportPanel>();
         TerainBrush = Viewport.AddChild<VerticalPanel>();
+        ToolBarPanel = Root.AddChild<HorizontalPanel>();
+        ToolBarPanel.AutoSize = false;
+        ToolBarPanel.Height = 32;
+        ToolBarPanel.Width = Root.Width;
+        ToolBarPanel.BackgroundColor = Style.Current.Background;
+        ToolBarPanel.SetAnchorPreset(AnchorPresets.HorizontalStretchTop, true);
+
         TerainBrush.Width = inspectorsize;
         TerainBrush.Height = inspectorsize;
         TerainBrush.BackgroundColor = Style.Current.Background;
@@ -108,32 +117,29 @@ public class UIRoot : Script
         spacer.SetAnchorPreset(AnchorPresets.VerticalStretchRight, true);
 
         inspectorsize = 300;
-        Viewport.Location = Float2.Zero;
-        Viewport.Height = Root.Height;
-        Viewport.Width = Root.Width - inspectorsize - spacersize;
-        Inspector.Height = Root.Height;
-        Inspector.Width = inspectorsize;
-        Inspector.Location = new Float2(Viewport.Width + spacersize, Inspector.Location.Y);
-        spacer.Location = new Float2(Viewport.Width, spacer.Location.Y);
-        spacer.Height = Root.Height;
-        spacer.Width = spacersize;
-
+        updatespacer(null);
         Root.SizeChanged += updatespacer;
 
         Terrain.Instance.InitBrushSettingsUI();
+
+        ToolBar.BuildUI(ToolBarPanel);
+
+        version.Y = ToolBarPanel.Height;
     }
 
     private void updatespacer(Control obj)
     {
-        Viewport.Location = Float2.Zero;
-        Viewport.Height = Root.Height;
+        Viewport.Location = new Float2(0, ToolBarPanel.Height);
+        Viewport.Height = Root.Height - ToolBarPanel.Height;
         Viewport.Width = Root.Width - inspectorsize - spacersize;
         Inspector.Height = Root.Height;
         Inspector.Width = inspectorsize;
-        Inspector.Location = new Float2(Viewport.Width + spacersize, Inspector.Location.Y);
-        spacer.Location = new Float2(Viewport.Width, spacer.Location.Y);
-        spacer.Height = Root.Height;
+        Inspector.Location = new Float2(Viewport.Width + spacersize, 0);
+        spacer.Location = new Float2(Viewport.Width, ToolBarPanel.Height);
+        spacer.Height = Root.Height - ToolBarPanel.Height;
         spacer.Width = spacersize;
+
+        ToolBarPanel.Width = Root.Width - inspectorsize;
     }
 
     public bool Drag = false;
@@ -142,7 +148,11 @@ public class UIRoot : Script
         version.Text = "Version " + Major + "." + Minor + "." + Pach;
 
         if (!TerainBrush.Visible)
+        {
             TerainBrush.Location = Input.MousePosition;
+
+            TerainBrush.Y -= ToolBarPanel.Height;
+        }
 
 
         if (spacer == null)
@@ -151,17 +161,9 @@ public class UIRoot : Script
         {
             inspectorsize = Root.Width - Input.MousePosition.X - spacersize * 0.5f;
             inspectorsize = Mathf.Clamp(inspectorsize, 200, 400);
-
-            Viewport.Location = Float2.Zero;
-            Viewport.Height = Root.Height;
-            Viewport.Width = Root.Width - inspectorsize - spacersize;
-            Inspector.Height = Root.Height;
-            Inspector.Width = inspectorsize;
-            Inspector.Location = new Float2(Viewport.Width + spacersize, Inspector.Location.Y);
-            spacer.Location = new Float2(Viewport.Width, spacer.Location.Y);
-            spacer.Height = Root.Height;
-            spacer.Width = spacersize;
+            updatespacer(null);
         }
         base.OnUpdate();
     }
+
 }
