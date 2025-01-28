@@ -16,9 +16,9 @@ Map Editor is build using [Flax Engine (1.9)](https://flaxengine.com)
 
 **Terrain**<br>
 &emsp;**Height Map**<br>
-&emsp;&emsp;❌🟣 **Editor**<br>
+&emsp;&emsp;❌🟠 **Editor**<br>
 &emsp;&emsp;✔️🟢 **Importer**<br>
-&emsp;&emsp;❌🟣 **Exoirter**<br>
+&emsp;&emsp;❌🟠 **Exoirter**<br>
 <br>
 &emsp;**Grass Map**<br>
 &emsp;&emsp;❌🟣 **Editor**<br>
